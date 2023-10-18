@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             txtEncryptedOutput = new TextBox();
             btnSetKey = new Button();
             txtUserKey = new TextBox();
@@ -37,6 +39,7 @@
             txtInput = new TextBox();
             btnDescifrar = new Button();
             btnCifrado = new Button();
+            guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             SuspendLayout();
             // 
             // txtEncryptedOutput
@@ -115,6 +118,18 @@
             btnCifrado.UseVisualStyleBackColor = true;
             btnCifrado.Click += btnCifrado_Click;
             // 
+            // guna2GradientPanel1
+            // 
+            guna2GradientPanel1.CustomizableEdges = customizableEdges1;
+            guna2GradientPanel1.Dock = DockStyle.Fill;
+            guna2GradientPanel1.FillColor = Color.FromArgb(0, 12, 57);
+            guna2GradientPanel1.FillColor2 = Color.FromArgb(0, 20, 89);
+            guna2GradientPanel1.Location = new Point(0, 0);
+            guna2GradientPanel1.Name = "guna2GradientPanel1";
+            guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2GradientPanel1.Size = new Size(800, 450);
+            guna2GradientPanel1.TabIndex = 27;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -129,6 +144,7 @@
             Controls.Add(txtInput);
             Controls.Add(btnDescifrar);
             Controls.Add(btnCifrado);
+            Controls.Add(guna2GradientPanel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             ResumeLayout(false);
@@ -146,5 +162,6 @@
         private TextBox txtInput;
         private Button btnDescifrar;
         private Button btnCifrado;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
     }
 }
