@@ -12,6 +12,15 @@ namespace Playfair
 
 
 
+
+
+
+
+
+
+
+
+
         private void btnCifrado_Click(object sender, EventArgs e)
         {
             string key = txtUserKey.Text; // Reemplaza con tu clave
@@ -22,6 +31,18 @@ namespace Playfair
 
             // Muestra el texto cifrado en la interfaz de usuario o guárdalo en un archivo.
             txtEncryptedOutput.Text = encryptedText;
+        }
+
+        private void btnShowMatrix_Click(object sender, EventArgs e)
+        {
+            // Asegúrate de tener una instancia válida de PlayfairCipher con la matriz generada.
+            PlayfairCipher playfairCipher = new PlayfairCipher(txtUserKey.Text); // Reemplaza "YOUR_KEY" con tu clave.
+
+            // Llama al método para obtener la representación de la matriz del alfabeto.
+            string matrixAsString = playfairCipher.GetPlayfairMatrixAsString();
+
+            // Supongamos que tienes un control TextBox llamado txtMatrixDisplay en tu interfaz de usuario.
+            txtMatrix.Text = matrixAsString;
         }
 
         private void btnDescifrar_Click(object sender, EventArgs e)
@@ -37,18 +58,6 @@ namespace Playfair
 
             // Muestra el texto descifrado en la interfaz de usuario o guárdalo en un archivo.
             txtDecryptedOutput.Text = decryptedText;
-        }
-
-        private void btnShowMatrix_Click(object sender, EventArgs e)
-        {
-            // Asegúrate de tener una instancia válida de PlayfairCipher con la matriz generada.
-            PlayfairCipher playfairCipher = new PlayfairCipher(txtUserKey.Text); // Reemplaza "YOUR_KEY" con tu clave.
-
-            // Llama al método para obtener la representación de la matriz del alfabeto.
-            string matrixAsString = playfairCipher.GetPlayfairMatrixAsString();
-
-            // Supongamos que tienes un control TextBox llamado txtMatrixDisplay en tu interfaz de usuario.
-            txtMatrix.Text = matrixAsString;
         }
 
         private void btnSetKey_Click(object sender, EventArgs e)
@@ -67,6 +76,7 @@ namespace Playfair
 
             // La instancia de PlayfairCipher ahora está lista para su uso.
         }
+
 
         // Función para validar la clave (puedes personalizarla según tus requisitos).
         private bool IsValidKey(string key)
