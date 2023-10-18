@@ -13,6 +13,8 @@ public class PlayfairCipher
         GeneratePlayfairMatrix(key);
     }
 
+    private PlayfairCipher playfairCipher; // Asegúrate de tener una variable de clase para mantener la instancia de PlayfairCipher.
+
 
     private void GeneratePlayfairMatrix(string key)
     {
@@ -158,5 +160,20 @@ public class PlayfairCipher
         }
         return position; // Si no se encuentra la letra, se devuelve [0, 0] como valor predeterminado.
     }
+
+    public string GetPlayfairMatrixAsString()
+    {
+        StringBuilder matrixString = new StringBuilder();
+        for (int row = 0; row < 5; row++)
+        {
+            for (int col = 0; col < 5; col++)
+            {
+                matrixString.Append(playfairMatrix[row, col] + " ");
+            }
+            matrixString.AppendLine();
+        }
+        return matrixString.ToString();
+    }
+
 
 }
