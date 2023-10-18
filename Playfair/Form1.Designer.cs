@@ -129,6 +129,7 @@
             Controls.Add(txtInput);
             Controls.Add(btnDescifrar);
             Controls.Add(btnCifrado);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
