@@ -268,6 +268,7 @@
             guna2Button3.Size = new Size(180, 45);
             guna2Button3.TabIndex = 14;
             guna2Button3.Text = "Abrir txt";
+            guna2Button3.Click += guna2Button3_Click;
             // 
             // guna2Button4
             // 

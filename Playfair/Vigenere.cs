@@ -17,7 +17,7 @@ namespace Playfair
             ArregloColum[1] = "BColum";
             ArregloColum[2] = "CColum";
             ArregloColum[3] = "DColum";
-            ArregloColum[4] = "EColum";
+            ArregloColum[4] = "EColum";   
             ArregloColum[5] = "FColum";
             ArregloColum[6] = "GColum";
             ArregloColum[7] = "HColum";
@@ -98,7 +98,7 @@ namespace Playfair
                         Resultado = i;
                         break;
                     }
-                }
+                }  
 
             }
 
