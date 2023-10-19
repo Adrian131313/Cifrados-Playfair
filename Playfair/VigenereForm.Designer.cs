@@ -236,6 +236,7 @@
             guna2Button1.Size = new Size(139, 43);
             guna2Button1.TabIndex = 12;
             guna2Button1.Text = "Cifrar";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // guna2Button2
             // 

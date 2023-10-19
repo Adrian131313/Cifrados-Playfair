@@ -40,11 +40,12 @@
             btnDescifrar = new Button();
             btnCifrado = new Button();
             guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            guna2GradientPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // txtEncryptedOutput
             // 
-            txtEncryptedOutput.Location = new Point(351, 216);
+            txtEncryptedOutput.Location = new Point(247, 216);
             txtEncryptedOutput.Name = "txtEncryptedOutput";
             txtEncryptedOutput.Size = new Size(100, 23);
             txtEncryptedOutput.TabIndex = 21;
@@ -86,21 +87,21 @@
             // 
             // txtDecryptedOutput
             // 
-            txtDecryptedOutput.Location = new Point(323, 358);
+            txtDecryptedOutput.Location = new Point(247, 356);
             txtDecryptedOutput.Name = "txtDecryptedOutput";
             txtDecryptedOutput.Size = new Size(100, 23);
             txtDecryptedOutput.TabIndex = 22;
             // 
             // txtInput
             // 
-            txtInput.Location = new Point(124, 216);
+            txtInput.Location = new Point(49, 216);
             txtInput.Name = "txtInput";
             txtInput.Size = new Size(100, 23);
             txtInput.TabIndex = 20;
             // 
             // btnDescifrar
             // 
-            btnDescifrar.Location = new Point(336, 294);
+            btnDescifrar.Location = new Point(261, 285);
             btnDescifrar.Name = "btnDescifrar";
             btnDescifrar.Size = new Size(75, 23);
             btnDescifrar.TabIndex = 19;
@@ -110,7 +111,7 @@
             // 
             // btnCifrado
             // 
-            btnCifrado.Location = new Point(136, 294);
+            btnCifrado.Location = new Point(63, 285);
             btnCifrado.Name = "btnCifrado";
             btnCifrado.Size = new Size(75, 23);
             btnCifrado.TabIndex = 18;
@@ -120,6 +121,11 @@
             // 
             // guna2GradientPanel1
             // 
+            guna2GradientPanel1.Controls.Add(txtEncryptedOutput);
+            guna2GradientPanel1.Controls.Add(btnCifrado);
+            guna2GradientPanel1.Controls.Add(txtInput);
+            guna2GradientPanel1.Controls.Add(btnDescifrar);
+            guna2GradientPanel1.Controls.Add(txtDecryptedOutput);
             guna2GradientPanel1.CustomizableEdges = customizableEdges1;
             guna2GradientPanel1.Dock = DockStyle.Fill;
             guna2GradientPanel1.FillColor = Color.FromArgb(0, 12, 57);
@@ -130,23 +136,19 @@
             guna2GradientPanel1.Size = new Size(800, 450);
             guna2GradientPanel1.TabIndex = 27;
             // 
-            // Form1
+            // PlayfairForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(txtEncryptedOutput);
             Controls.Add(btnSetKey);
             Controls.Add(txtUserKey);
             Controls.Add(txtMatrix);
             Controls.Add(btnShowMatrix);
-            Controls.Add(txtDecryptedOutput);
-            Controls.Add(txtInput);
-            Controls.Add(btnDescifrar);
-            Controls.Add(btnCifrado);
             Controls.Add(guna2GradientPanel1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            Name = "PlayfairForm";
+            guna2GradientPanel1.ResumeLayout(false);
+            guna2GradientPanel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
