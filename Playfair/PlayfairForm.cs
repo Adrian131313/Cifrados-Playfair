@@ -1,8 +1,8 @@
 namespace Playfair
 {
-    public partial class Form1 : Form
+    public partial class PlayfairForm : Form
     {
-        public Form1()
+        public PlayfairForm()
         {
             InitializeComponent();
         }
