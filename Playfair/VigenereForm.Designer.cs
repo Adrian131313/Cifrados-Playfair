@@ -87,6 +87,7 @@
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2TextBox1.Size = new Size(325, 36);
             guna2TextBox1.TabIndex = 0;
+            guna2TextBox1.TextChanged += guna2TextBox1_TextChanged;
             // 
             // guna2TextBox2
             // 
@@ -107,6 +108,7 @@
             guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2TextBox2.Size = new Size(200, 36);
             guna2TextBox2.TabIndex = 1;
+            guna2TextBox2.TextChanged += guna2TextBox2_TextChanged;
             // 
             // guna2TextBox3
             // 

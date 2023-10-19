@@ -2,23 +2,12 @@ namespace Playfair
 {
     public partial class PlayfairForm : Form
     {
+        private PlayfairCipher playfairCipher;
+
         public PlayfairForm()
         {
             InitializeComponent();
         }
-
-        private PlayfairCipher playfairCipher;
-
-
-
-
-
-
-
-
-
-
-
 
 
         private void btnCifrado_Click(object sender, EventArgs e)
@@ -35,8 +24,11 @@ namespace Playfair
 
         private void btnShowMatrix_Click(object sender, EventArgs e)
         {
-            // Asegúrate de tener una instancia válida de PlayfairCipher con la matriz generada.
-            PlayfairCipher playfairCipher = new PlayfairCipher(txtUserKey.Text); // Reemplaza "YOUR_KEY" con tu clave.
+            if (playfairCipher == null)
+            {
+                MessageBox.Show("Primero debes establecer una clave.");
+                return;
+            }
 
             // Llama al método para obtener la representación de la matriz del alfabeto.
             string matrixAsString = playfairCipher.GetPlayfairMatrixAsString();
@@ -96,6 +88,55 @@ namespace Playfair
             return true;
         }
 
+        private void txtInput_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        private void btnOpenFile_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Archivos de texto (*.txt)|*.txt";
+            openFileDialog.Title = "Selecciona un archivo de texto";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = openFileDialog.FileName;
+                string fileContent = File.ReadAllText(filePath);
+
+                // Asigna el contenido del archivo al control txtInput.
+                txtInput.Text = fileContent;
+
+                // Ahora puedes utilizar fileContent (el contenido del archivo) para cifrar o descifrar según sea necesario.
+                // Ejemplo de cifrado:
+                if (playfairCipher != null)
+                {
+                    string encryptedText = playfairCipher.Encrypt(fileContent);
+                    txtEncryptedOutput.Text = encryptedText;
+                }
+                // Ejemplo de descifrado:
+                // if (playfairCipher != null)
+                // {
+                //     string decryptedText = playfairCipher.Decrypt(fileContent);
+                //     txtDecryptedOutput.Text = decryptedText;
+                // }
+            }
+
+        }
+
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtUserKey_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

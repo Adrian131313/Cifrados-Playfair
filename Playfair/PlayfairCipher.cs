@@ -7,62 +7,53 @@ using System.Threading.Tasks;
 public class PlayfairCipher
 {
     private char[,] playfairMatrix;
+    private string key;
+    private string encrytedText;
 
     public PlayfairCipher(string key)
     {
+        this.key = key;
         GeneratePlayfairMatrix(key);
     }
 
-    private PlayfairCipher playfairCipher; // Asegúrate de tener una variable de clase para mantener la instancia de PlayfairCipher.
-
-
-    private void GeneratePlayfairMatrix(string key)
+    public string Key
     {
-        // Crear una matriz de 5x5 para Playfair
-        playfairMatrix = new char[5, 5];
-        bool[] usedLetters = new bool[26]; // Para rastrear las letras utilizadas
-
-        // Elimina caracteres duplicados y convierte la clave a mayúsculas
-        key = new string(key.Distinct().Where(char.IsLetter).ToArray()).ToUpper();
-
-        // Llena la matriz con la clave
-        int keyIndex = 0;
-        for (int row = 0; row < 5; row++)
+        get { return key; }
+        set
         {
-            for (int col = 0; col < 5; col++)
+            if (IsValidKey(value))
             {
-                if (keyIndex < key.Length)
-                {
-                    char currentChar = key[keyIndex];
-                    // Evita repetir letras en la matriz
-                    while (usedLetters[currentChar - 'A'])
-                    {
-                        keyIndex++;
-                        if (keyIndex >= key.Length)
-                            break;
-                        currentChar = key[keyIndex];
-                    }
-                    playfairMatrix[row, col] = currentChar;
-                    usedLetters[currentChar - 'A'] = true;
-                    keyIndex++;
-                }
-                else
-                {
-                    // Rellena la matriz con letras del alfabeto que no se encuentren en la clave
-                    for (char letter = 'A'; letter <= 'Z'; letter++)
-                    {
-                        if (letter != 'J' && !usedLetters[letter - 'A'])
-                        {
-                            playfairMatrix[row, col] = letter;
-                            usedLetters[letter - 'A'] = true;
-                            break;
-                        }
-                    }
-                }
+                key = value;
+                GeneratePlayfairMatrix(key);
+            }
+            else
+            {
+                throw new ArgumentException("La clave ingresada no es válida. Asegúrate de que solo contenga letras y no esté vacía.");
             }
         }
     }
 
+    public string encryptedText
+    {
+        get { return encryptedText; }
+        set { encryptedText = value; }
+    }
+
+    private bool IsValidKey(string key)
+    {
+        if (string.IsNullOrWhiteSpace(key))
+            return false;
+
+        foreach (char character in key)
+        {
+            if (!char.IsLetter(character))
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
 
     public string Encrypt(string plainText)
     {
@@ -131,6 +122,12 @@ public class PlayfairCipher
         return decryptedText.ToString();
     }
 
+    private PlayfairCipher playfairCipher; // Asegúrate de tener una variable de clase para mantener la instancia de PlayfairCipher.
+
+
+    
+ 
+
     private string NormalizeText(string text)
     {
         text = text.ToUpper(); // Convierte todo el texto a mayúsculas
@@ -159,6 +156,53 @@ public class PlayfairCipher
             }
         }
         return position; // Si no se encuentra la letra, se devuelve [0, 0] como valor predeterminado.
+    }
+
+    private void GeneratePlayfairMatrix(string key)
+    {
+        // Crear una matriz de 5x5 para Playfair
+        playfairMatrix = new char[5, 5];
+        bool[] usedLetters = new bool[26]; // Para rastrear las letras utilizadas
+
+        // Elimina caracteres duplicados y convierte la clave a mayúsculas
+        key = new string(key.Distinct().Where(char.IsLetter).ToArray()).ToUpper();
+
+        // Llena la matriz con la clave
+        int keyIndex = 0;
+        for (int row = 0; row < 5; row++)
+        {
+            for (int col = 0; col < 5; col++)
+            {
+                if (keyIndex < key.Length)
+                {
+                    char currentChar = key[keyIndex];
+                    // Evita repetir letras en la matriz
+                    while (usedLetters[currentChar - 'A'])
+                    {
+                        keyIndex++;
+                        if (keyIndex >= key.Length)
+                            break;
+                        currentChar = key[keyIndex];
+                    }
+                    playfairMatrix[row, col] = currentChar;
+                    usedLetters[currentChar - 'A'] = true;
+                    keyIndex++;
+                }
+                else
+                {
+                    // Rellena la matriz con letras del alfabeto que no se encuentren en la clave
+                    for (char letter = 'A'; letter <= 'Z'; letter++)
+                    {
+                        if (letter != 'J' && !usedLetters[letter - 'A'])
+                        {
+                            playfairMatrix[row, col] = letter;
+                            usedLetters[letter - 'A'] = true;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     public string GetPlayfairMatrixAsString()
