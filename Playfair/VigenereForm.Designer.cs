@@ -48,328 +48,453 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            txt_fraseC = new Guna.UI2.WinForms.Guna2TextBox();
+            txt_claveFraC = new Guna.UI2.WinForms.Guna2TextBox();
+            txt_CifradoD = new Guna.UI2.WinForms.Guna2TextBox();
+            txt_claveCifraD = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            lbl_desencriptacion = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            btn_guardarCifrado = new Guna.UI2.WinForms.Guna2Button();
+            btn_abrirFrase = new Guna.UI2.WinForms.Guna2Button();
+            btn_abrirCifrado = new Guna.UI2.WinForms.Guna2Button();
+            btn_cifrar = new Guna.UI2.WinForms.Guna2Button();
+            btn_descifrar = new Guna.UI2.WinForms.Guna2Button();
+            label1 = new Label();
+            txt_FraseCriptoC = new Guna.UI2.WinForms.Guna2TextBox();
+            txt_fraseDesifrada = new Guna.UI2.WinForms.Guna2TextBox();
+            abrirtxtFrase = new OpenFileDialog();
+            abrirtxtocifrado = new OpenFileDialog();
+            btn_GuardarFrase = new Guna.UI2.WinForms.Guna2Button();
+            guardarCifrado = new SaveFileDialog();
+            guardarFrase = new SaveFileDialog();
             SuspendLayout();
             // 
-            // guna2TextBox1
+            // txt_fraseC
             // 
-            guna2TextBox1.CustomizableEdges = customizableEdges1;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(197, 20);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PasswordChar = '\0';
-            guna2TextBox1.PlaceholderText = "";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2TextBox1.Size = new Size(325, 36);
-            guna2TextBox1.TabIndex = 0;
-            guna2TextBox1.TextChanged += guna2TextBox1_TextChanged;
+            txt_fraseC.BackColor = Color.Black;
+            txt_fraseC.BorderColor = Color.CornflowerBlue;
+            txt_fraseC.CustomizableEdges = customizableEdges1;
+            txt_fraseC.DefaultText = "";
+            txt_fraseC.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txt_fraseC.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txt_fraseC.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txt_fraseC.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txt_fraseC.FillColor = Color.Transparent;
+            txt_fraseC.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_fraseC.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_fraseC.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_fraseC.Location = new Point(158, 121);
+            txt_fraseC.Multiline = true;
+            txt_fraseC.Name = "txt_fraseC";
+            txt_fraseC.PasswordChar = '\0';
+            txt_fraseC.PlaceholderText = "";
+            txt_fraseC.SelectedText = "";
+            txt_fraseC.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txt_fraseC.Size = new Size(314, 80);
+            txt_fraseC.TabIndex = 0;
+            txt_fraseC.TextChanged += guna2TextBox1_TextChanged;
             // 
-            // guna2TextBox2
+            // txt_claveFraC
             // 
-            guna2TextBox2.CustomizableEdges = customizableEdges3;
-            guna2TextBox2.DefaultText = "";
-            guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Location = new Point(197, 90);
-            guna2TextBox2.Name = "guna2TextBox2";
-            guna2TextBox2.PasswordChar = '\0';
-            guna2TextBox2.PlaceholderText = "";
-            guna2TextBox2.SelectedText = "";
-            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2TextBox2.Size = new Size(200, 36);
-            guna2TextBox2.TabIndex = 1;
-            guna2TextBox2.TextChanged += guna2TextBox2_TextChanged;
+            txt_claveFraC.BorderColor = Color.CornflowerBlue;
+            txt_claveFraC.CustomizableEdges = customizableEdges3;
+            txt_claveFraC.DefaultText = "";
+            txt_claveFraC.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txt_claveFraC.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txt_claveFraC.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txt_claveFraC.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txt_claveFraC.FillColor = Color.Transparent;
+            txt_claveFraC.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_claveFraC.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_claveFraC.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_claveFraC.Location = new Point(158, 234);
+            txt_claveFraC.Name = "txt_claveFraC";
+            txt_claveFraC.PasswordChar = '\0';
+            txt_claveFraC.PlaceholderForeColor = Color.LightSteelBlue;
+            txt_claveFraC.PlaceholderText = "";
+            txt_claveFraC.SelectedText = "";
+            txt_claveFraC.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txt_claveFraC.Size = new Size(212, 36);
+            txt_claveFraC.TabIndex = 1;
+            txt_claveFraC.TextChanged += guna2TextBox2_TextChanged;
             // 
-            // guna2TextBox3
+            // txt_CifradoD
             // 
-            guna2TextBox3.CustomizableEdges = customizableEdges5;
-            guna2TextBox3.DefaultText = "";
-            guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox3.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox3.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox3.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Location = new Point(197, 249);
-            guna2TextBox3.Name = "guna2TextBox3";
-            guna2TextBox3.PasswordChar = '\0';
-            guna2TextBox3.PlaceholderText = "";
-            guna2TextBox3.SelectedText = "";
-            guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2TextBox3.Size = new Size(325, 36);
-            guna2TextBox3.TabIndex = 2;
+            txt_CifradoD.BorderColor = Color.CornflowerBlue;
+            txt_CifradoD.CustomizableEdges = customizableEdges5;
+            txt_CifradoD.DefaultText = "";
+            txt_CifradoD.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txt_CifradoD.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txt_CifradoD.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txt_CifradoD.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txt_CifradoD.FillColor = Color.Transparent;
+            txt_CifradoD.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_CifradoD.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_CifradoD.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_CifradoD.Location = new Point(210, 328);
+            txt_CifradoD.Multiline = true;
+            txt_CifradoD.Name = "txt_CifradoD";
+            txt_CifradoD.PasswordChar = '\0';
+            txt_CifradoD.PlaceholderText = "";
+            txt_CifradoD.SelectedText = "";
+            txt_CifradoD.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txt_CifradoD.Size = new Size(262, 139);
+            txt_CifradoD.TabIndex = 2;
+            txt_CifradoD.TextChanged += txt_CifradoD_TextChanged;
             // 
-            // guna2TextBox4
+            // txt_claveCifraD
             // 
-            guna2TextBox4.CustomizableEdges = customizableEdges7;
-            guna2TextBox4.DefaultText = "";
-            guna2TextBox4.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox4.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox4.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox4.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox4.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2TextBox4.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox4.Location = new Point(204, 314);
-            guna2TextBox4.Name = "guna2TextBox4";
-            guna2TextBox4.PasswordChar = '\0';
-            guna2TextBox4.PlaceholderText = "";
-            guna2TextBox4.SelectedText = "";
-            guna2TextBox4.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2TextBox4.Size = new Size(200, 36);
-            guna2TextBox4.TabIndex = 3;
+            txt_claveCifraD.BorderColor = Color.CornflowerBlue;
+            txt_claveCifraD.CustomizableEdges = customizableEdges7;
+            txt_claveCifraD.DefaultText = "";
+            txt_claveCifraD.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txt_claveCifraD.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txt_claveCifraD.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txt_claveCifraD.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txt_claveCifraD.FillColor = Color.Transparent;
+            txt_claveCifraD.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_claveCifraD.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_claveCifraD.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_claveCifraD.Location = new Point(210, 486);
+            txt_claveCifraD.Multiline = true;
+            txt_claveCifraD.Name = "txt_claveCifraD";
+            txt_claveCifraD.PasswordChar = '\0';
+            txt_claveCifraD.PlaceholderText = "";
+            txt_claveCifraD.SelectedText = "";
+            txt_claveCifraD.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txt_claveCifraD.Size = new Size(229, 36);
+            txt_claveCifraD.TabIndex = 3;
             // 
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Location = new Point(63, 39);
+            guna2HtmlLabel1.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel1.ForeColor = Color.White;
+            guna2HtmlLabel1.Location = new Point(25, 135);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(81, 17);
+            guna2HtmlLabel1.Size = new Size(127, 22);
             guna2HtmlLabel1.TabIndex = 4;
             guna2HtmlLabel1.Text = "Ingrese la frase";
             // 
             // guna2HtmlLabel2
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Location = new Point(63, 109);
+            guna2HtmlLabel2.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel2.ForeColor = Color.White;
+            guna2HtmlLabel2.Location = new Point(25, 248);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(83, 17);
+            guna2HtmlLabel2.Size = new Size(127, 22);
             guna2HtmlLabel2.TabIndex = 5;
             guna2HtmlLabel2.Text = "Ingrese la clave";
             // 
             // guna2HtmlLabel3
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Location = new Point(70, 268);
+            guna2HtmlLabel3.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel3.ForeColor = Color.White;
+            guna2HtmlLabel3.Location = new Point(25, 342);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(117, 17);
+            guna2HtmlLabel3.Size = new Size(179, 22);
             guna2HtmlLabel3.TabIndex = 6;
             guna2HtmlLabel3.Text = "Ingrese la criptografia";
             // 
             // guna2HtmlLabel4
             // 
             guna2HtmlLabel4.BackColor = Color.Transparent;
-            guna2HtmlLabel4.Location = new Point(70, 333);
+            guna2HtmlLabel4.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel4.ForeColor = Color.White;
+            guna2HtmlLabel4.Location = new Point(25, 500);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            guna2HtmlLabel4.Size = new Size(83, 17);
+            guna2HtmlLabel4.Size = new Size(127, 22);
             guna2HtmlLabel4.TabIndex = 7;
             guna2HtmlLabel4.Text = "Ingrese la clave";
             // 
             // guna2HtmlLabel5
             // 
             guna2HtmlLabel5.BackColor = Color.Transparent;
-            guna2HtmlLabel5.Location = new Point(100, 205);
+            guna2HtmlLabel5.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel5.ForeColor = Color.White;
+            guna2HtmlLabel5.Location = new Point(671, 135);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            guna2HtmlLabel5.Size = new Size(107, 17);
+            guna2HtmlLabel5.Size = new Size(162, 22);
             guna2HtmlLabel5.TabIndex = 8;
             guna2HtmlLabel5.Text = "Frase criptografiada";
-            // 
-            // guna2HtmlLabel6
-            // 
-            guna2HtmlLabel6.BackColor = Color.Transparent;
-            guna2HtmlLabel6.Location = new Point(215, 205);
-            guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            guna2HtmlLabel6.Size = new Size(6, 17);
-            guna2HtmlLabel6.TabIndex = 9;
-            guna2HtmlLabel6.Text = ".";
             // 
             // guna2HtmlLabel7
             // 
             guna2HtmlLabel7.BackColor = Color.Transparent;
-            guna2HtmlLabel7.BorderStyle = BorderStyle.FixedSingle;
-            guna2HtmlLabel7.Location = new Point(154, 441);
+            guna2HtmlLabel7.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel7.ForeColor = Color.White;
+            guna2HtmlLabel7.Location = new Point(660, 348);
             guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            guna2HtmlLabel7.Size = new Size(108, 19);
+            guna2HtmlLabel7.Size = new Size(163, 22);
             guna2HtmlLabel7.TabIndex = 10;
-            guna2HtmlLabel7.Text = "Frase descodificada";
+            guna2HtmlLabel7.Text = "Frase desencriptada";
             // 
-            // guna2HtmlLabel8
+            // lbl_desencriptacion
             // 
-            guna2HtmlLabel8.BackColor = Color.Transparent;
-            guna2HtmlLabel8.Location = new Point(275, 441);
-            guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            guna2HtmlLabel8.Size = new Size(6, 17);
-            guna2HtmlLabel8.TabIndex = 11;
-            guna2HtmlLabel8.Text = ".";
+            lbl_desencriptacion.BackColor = Color.Transparent;
+            lbl_desencriptacion.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_desencriptacion.ForeColor = Color.White;
+            lbl_desencriptacion.Location = new Point(660, 385);
+            lbl_desencriptacion.Name = "lbl_desencriptacion";
+            lbl_desencriptacion.Size = new Size(3, 2);
+            lbl_desencriptacion.TabIndex = 11;
+            lbl_desencriptacion.Text = null;
             // 
-            // guna2Button1
+            // btn_guardarCifrado
             // 
-            guna2Button1.CustomizableEdges = customizableEdges9;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(70, 142);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2Button1.Size = new Size(139, 43);
-            guna2Button1.TabIndex = 12;
-            guna2Button1.Text = "Cifrar";
-            guna2Button1.Click += guna2Button1_Click;
+            btn_guardarCifrado.BorderColor = Color.RoyalBlue;
+            btn_guardarCifrado.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btn_guardarCifrado.BorderThickness = 3;
+            btn_guardarCifrado.CustomizableEdges = customizableEdges9;
+            btn_guardarCifrado.DisabledState.BorderColor = Color.DarkGray;
+            btn_guardarCifrado.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_guardarCifrado.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_guardarCifrado.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_guardarCifrado.FillColor = Color.Transparent;
+            btn_guardarCifrado.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_guardarCifrado.ForeColor = Color.White;
+            btn_guardarCifrado.Location = new Point(491, 253);
+            btn_guardarCifrado.Name = "btn_guardarCifrado";
+            btn_guardarCifrado.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btn_guardarCifrado.Size = new Size(144, 45);
+            btn_guardarCifrado.TabIndex = 13;
+            btn_guardarCifrado.Text = "Guardar txt";
+            btn_guardarCifrado.Click += btn_guardarCifrado_Click;
             // 
-            // guna2Button2
+            // btn_abrirFrase
             // 
-            guna2Button2.CustomizableEdges = customizableEdges11;
-            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(236, 142);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Button2.Size = new Size(180, 45);
-            guna2Button2.TabIndex = 13;
-            guna2Button2.Text = "Guardar txt";
+            btn_abrirFrase.BorderColor = Color.RoyalBlue;
+            btn_abrirFrase.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btn_abrirFrase.BorderThickness = 3;
+            btn_abrirFrase.CustomizableEdges = customizableEdges11;
+            btn_abrirFrase.DisabledState.BorderColor = Color.DarkGray;
+            btn_abrirFrase.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_abrirFrase.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_abrirFrase.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_abrirFrase.FillColor = Color.Transparent;
+            btn_abrirFrase.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_abrirFrase.ForeColor = Color.White;
+            btn_abrirFrase.Location = new Point(491, 121);
+            btn_abrirFrase.Name = "btn_abrirFrase";
+            btn_abrirFrase.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btn_abrirFrase.Size = new Size(144, 45);
+            btn_abrirFrase.TabIndex = 14;
+            btn_abrirFrase.Text = "Abrir txt";
+            btn_abrirFrase.Click += guna2Button3_Click;
             // 
-            // guna2Button3
+            // btn_abrirCifrado
             // 
-            guna2Button3.CustomizableEdges = customizableEdges13;
-            guna2Button3.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button3.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button3.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button3.ForeColor = Color.White;
-            guna2Button3.Location = new Point(465, 142);
-            guna2Button3.Name = "guna2Button3";
-            guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Button3.Size = new Size(180, 45);
-            guna2Button3.TabIndex = 14;
-            guna2Button3.Text = "Abrir txt";
-            guna2Button3.Click += guna2Button3_Click;
+            btn_abrirCifrado.BorderColor = Color.RoyalBlue;
+            btn_abrirCifrado.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btn_abrirCifrado.BorderThickness = 3;
+            btn_abrirCifrado.CustomizableEdges = customizableEdges13;
+            btn_abrirCifrado.DisabledState.BorderColor = Color.DarkGray;
+            btn_abrirCifrado.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_abrirCifrado.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_abrirCifrado.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_abrirCifrado.FillColor = Color.Transparent;
+            btn_abrirCifrado.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_abrirCifrado.ForeColor = Color.White;
+            btn_abrirCifrado.Location = new Point(491, 328);
+            btn_abrirCifrado.Name = "btn_abrirCifrado";
+            btn_abrirCifrado.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btn_abrirCifrado.Size = new Size(144, 45);
+            btn_abrirCifrado.TabIndex = 17;
+            btn_abrirCifrado.Text = "Abrir txt";
+            btn_abrirCifrado.Tile = true;
+            btn_abrirCifrado.Click += guna2Button6_Click;
             // 
-            // guna2Button4
+            // btn_cifrar
             // 
-            guna2Button4.CustomizableEdges = customizableEdges15;
-            guna2Button4.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button4.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button4.ForeColor = Color.White;
-            guna2Button4.Location = new Point(70, 370);
-            guna2Button4.Name = "guna2Button4";
-            guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2Button4.Size = new Size(137, 45);
-            guna2Button4.TabIndex = 15;
-            guna2Button4.Text = "Descifrar";
+            btn_cifrar.BorderColor = Color.RoyalBlue;
+            btn_cifrar.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btn_cifrar.BorderThickness = 3;
+            btn_cifrar.CustomizableEdges = customizableEdges15;
+            btn_cifrar.DisabledState.BorderColor = Color.DarkGray;
+            btn_cifrar.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_cifrar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_cifrar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_cifrar.FillColor = Color.Transparent;
+            btn_cifrar.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_cifrar.ForeColor = Color.White;
+            btn_cifrar.Location = new Point(491, 187);
+            btn_cifrar.Name = "btn_cifrar";
+            btn_cifrar.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btn_cifrar.Size = new Size(144, 45);
+            btn_cifrar.TabIndex = 18;
+            btn_cifrar.Text = "Cifrar";
+            btn_cifrar.Click += btn_cifrar_Click;
             // 
-            // guna2Button5
+            // btn_descifrar
             // 
-            guna2Button5.CustomizableEdges = customizableEdges17;
-            guna2Button5.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button5.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button5.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button5.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button5.ForeColor = Color.White;
-            guna2Button5.Location = new Point(236, 370);
-            guna2Button5.Name = "guna2Button5";
-            guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2Button5.Size = new Size(180, 45);
-            guna2Button5.TabIndex = 16;
-            guna2Button5.Text = "Guardar txt";
+            btn_descifrar.BorderColor = Color.RoyalBlue;
+            btn_descifrar.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btn_descifrar.BorderThickness = 3;
+            btn_descifrar.CustomizableEdges = customizableEdges17;
+            btn_descifrar.DisabledState.BorderColor = Color.DarkGray;
+            btn_descifrar.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_descifrar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_descifrar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_descifrar.FillColor = Color.Transparent;
+            btn_descifrar.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_descifrar.ForeColor = Color.White;
+            btn_descifrar.Location = new Point(491, 393);
+            btn_descifrar.Name = "btn_descifrar";
+            btn_descifrar.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            btn_descifrar.Size = new Size(144, 45);
+            btn_descifrar.TabIndex = 19;
+            btn_descifrar.Text = "Descifrar";
+            btn_descifrar.Click += btn_descifrar_Click;
             // 
-            // guna2Button6
+            // label1
             // 
-            guna2Button6.CustomizableEdges = customizableEdges19;
-            guna2Button6.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button6.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button6.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button6.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button6.ForeColor = Color.White;
-            guna2Button6.Location = new Point(465, 370);
-            guna2Button6.Name = "guna2Button6";
-            guna2Button6.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            guna2Button6.Size = new Size(180, 45);
-            guna2Button6.TabIndex = 17;
-            guna2Button6.Text = "Abrir txt";
-            guna2Button6.Click += guna2Button6_Click;
+            label1.AutoSize = true;
+            label1.Font = new Font("Impact", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(457, 23);
+            label1.Name = "label1";
+            label1.Size = new Size(121, 36);
+            label1.TabIndex = 20;
+            label1.Text = "VIGENERE";
+            // 
+            // txt_FraseCriptoC
+            // 
+            txt_FraseCriptoC.CustomizableEdges = customizableEdges19;
+            txt_FraseCriptoC.DefaultText = "";
+            txt_FraseCriptoC.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txt_FraseCriptoC.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txt_FraseCriptoC.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txt_FraseCriptoC.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txt_FraseCriptoC.FillColor = Color.Transparent;
+            txt_FraseCriptoC.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_FraseCriptoC.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_FraseCriptoC.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_FraseCriptoC.Location = new Point(660, 163);
+            txt_FraseCriptoC.Multiline = true;
+            txt_FraseCriptoC.Name = "txt_FraseCriptoC";
+            txt_FraseCriptoC.PasswordChar = '\0';
+            txt_FraseCriptoC.PlaceholderText = "";
+            txt_FraseCriptoC.SelectedText = "";
+            txt_FraseCriptoC.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            txt_FraseCriptoC.Size = new Size(200, 135);
+            txt_FraseCriptoC.TabIndex = 21;
+            // 
+            // txt_fraseDesifrada
+            // 
+            txt_fraseDesifrada.CustomizableEdges = customizableEdges21;
+            txt_fraseDesifrada.DefaultText = "";
+            txt_fraseDesifrada.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txt_fraseDesifrada.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txt_fraseDesifrada.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txt_fraseDesifrada.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txt_fraseDesifrada.FillColor = Color.Transparent;
+            txt_fraseDesifrada.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_fraseDesifrada.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_fraseDesifrada.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txt_fraseDesifrada.Location = new Point(660, 393);
+            txt_fraseDesifrada.Multiline = true;
+            txt_fraseDesifrada.Name = "txt_fraseDesifrada";
+            txt_fraseDesifrada.PasswordChar = '\0';
+            txt_fraseDesifrada.PlaceholderText = "";
+            txt_fraseDesifrada.SelectedText = "";
+            txt_fraseDesifrada.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            txt_fraseDesifrada.Size = new Size(200, 129);
+            txt_fraseDesifrada.TabIndex = 22;
+            // 
+            // abrirtxtocifrado
+            // 
+            abrirtxtocifrado.FileName = "openFileDialog1";
+            // 
+            // btn_GuardarFrase
+            // 
+            btn_GuardarFrase.BorderColor = Color.RoyalBlue;
+            btn_GuardarFrase.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btn_GuardarFrase.BorderThickness = 3;
+            btn_GuardarFrase.CustomizableEdges = customizableEdges23;
+            btn_GuardarFrase.DisabledState.BorderColor = Color.DarkGray;
+            btn_GuardarFrase.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_GuardarFrase.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_GuardarFrase.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_GuardarFrase.FillColor = Color.Transparent;
+            btn_GuardarFrase.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_GuardarFrase.ForeColor = Color.White;
+            btn_GuardarFrase.Location = new Point(491, 457);
+            btn_GuardarFrase.Name = "btn_GuardarFrase";
+            btn_GuardarFrase.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            btn_GuardarFrase.Size = new Size(144, 45);
+            btn_GuardarFrase.TabIndex = 23;
+            btn_GuardarFrase.Text = "Guardar";
+            btn_GuardarFrase.Click += btn_GuardarFrase_Click;
             // 
             // VigenereForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(806, 472);
-            Controls.Add(guna2Button6);
-            Controls.Add(guna2Button5);
-            Controls.Add(guna2Button4);
-            Controls.Add(guna2Button3);
-            Controls.Add(guna2Button2);
-            Controls.Add(guna2Button1);
-            Controls.Add(guna2HtmlLabel8);
+            BackColor = Color.Black;
+            ClientSize = new Size(873, 541);
+            Controls.Add(btn_GuardarFrase);
+            Controls.Add(txt_fraseDesifrada);
+            Controls.Add(txt_FraseCriptoC);
+            Controls.Add(label1);
+            Controls.Add(btn_descifrar);
+            Controls.Add(btn_cifrar);
+            Controls.Add(btn_abrirCifrado);
+            Controls.Add(btn_abrirFrase);
+            Controls.Add(btn_guardarCifrado);
+            Controls.Add(lbl_desencriptacion);
             Controls.Add(guna2HtmlLabel7);
-            Controls.Add(guna2HtmlLabel6);
             Controls.Add(guna2HtmlLabel5);
             Controls.Add(guna2HtmlLabel4);
             Controls.Add(guna2HtmlLabel3);
             Controls.Add(guna2HtmlLabel2);
             Controls.Add(guna2HtmlLabel1);
-            Controls.Add(guna2TextBox4);
-            Controls.Add(guna2TextBox3);
-            Controls.Add(guna2TextBox2);
-            Controls.Add(guna2TextBox1);
+            Controls.Add(txt_claveCifraD);
+            Controls.Add(txt_CifradoD);
+            Controls.Add(txt_claveFraC);
+            Controls.Add(txt_fraseC);
             Name = "VigenereForm";
             Text = "Vigenere";
+            Load += VigenereForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2TextBox txt_fraseC;
+        private Guna.UI2.WinForms.Guna2TextBox txt_claveFraC;
+        private Guna.UI2.WinForms.Guna2TextBox txt_CifradoD;
+        private Guna.UI2.WinForms.Guna2TextBox txt_claveCifraD;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_desencriptacion;
+        private Guna.UI2.WinForms.Guna2Button btn_guardarCifrado;
+        private Guna.UI2.WinForms.Guna2Button btn_abrirFrase;
+        private Guna.UI2.WinForms.Guna2Button btn_abrirCifrado;
+        private Guna.UI2.WinForms.Guna2Button btn_cifrar;
+        private Guna.UI2.WinForms.Guna2Button btn_descifrar;
+        private Label label1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_FraseCriptoC;
+        private Guna.UI2.WinForms.Guna2TextBox txt_fraseDesifrada;
+        private OpenFileDialog abrirtxtFrase;
+        private OpenFileDialog abrirtxtocifrado;
+        private Guna.UI2.WinForms.Guna2Button btn_GuardarFrase;
+        private SaveFileDialog guardarCifrado;
+        private SaveFileDialog guardarFrase;
     }
 }

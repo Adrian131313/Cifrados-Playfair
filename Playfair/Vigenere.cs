@@ -1,112 +1,135 @@
-﻿using System;
+﻿using Cifrados_Seguridad;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace Playfair
 {
-    public class Vigenere
+    public class Vigenere : clasePadre
     {
-        string[] ArregloColum = new string[27];
-        string[] ArregloFil = new string[27];
-
-        public void IniciarValiables()
+        public Vigenere(string textoSinCifrar, string clave) : base(textoSinCifrar, clave)
         {
-            ArregloColum[0] = "AColum";
-            ArregloColum[1] = "BColum";
-            ArregloColum[2] = "CColum";
-            ArregloColum[3] = "DColum";
-            ArregloColum[4] = "EColum";   
-            ArregloColum[5] = "FColum";
-            ArregloColum[6] = "GColum";
-            ArregloColum[7] = "HColum";
-            ArregloColum[8] = "IColum";
-            ArregloColum[9] = "JColum";
-            ArregloColum[10] = "KColum";
-            ArregloColum[11] = "LColum";
-            ArregloColum[12] = "MColum";
-            ArregloColum[13] = "NColum";
-            ArregloColum[14] = "ÑColum";
-            ArregloColum[15] = "OColum";
-            ArregloColum[16] = "PColum";
-            ArregloColum[17] = "QColum";
-            ArregloColum[18] = "RColum";
-            ArregloColum[19] = "SColum";
-            ArregloColum[20] = "TColum";
-            ArregloColum[21] = "UColum";
-            ArregloColum[22] = "VColum";
-            ArregloColum[23] = "WColum";
-            ArregloColum[24] = "XColum";
-            ArregloColum[25] = "YColum";
-            ArregloColum[26] = "ZColum";
-
-
-
-            ArregloFil[0] = "AFiL";
-            ArregloFil[1] = "BFiL";
-            ArregloFil[2] = "CFiL";
-            ArregloFil[3] = "DFiL";
-            ArregloFil[4] = "EFiL";
-            ArregloFil[5] = "FFiL";
-            ArregloFil[6] = "GFiL";
-            ArregloFil[7] = "HFiL";
-            ArregloFil[8] = "IFiL";
-            ArregloFil[9] = "JFiL";
-            ArregloFil[10] = "KFiL";
-            ArregloFil[11] = "LFiL";
-            ArregloFil[12] = "MFiL";
-            ArregloFil[13] = "NFiL";
-            ArregloFil[14] = "ÑFiL";
-            ArregloFil[15] = "OFiL";
-            ArregloFil[16] = "PFiL";
-            ArregloFil[17] = "QFiL";
-            ArregloFil[18] = "RFiL";
-            ArregloFil[19] = "SFiL";
-            ArregloFil[20] = "TFiL";
-            ArregloFil[21] = "UFiL";
-            ArregloFil[22] = "VFiL";
-            ArregloFil[23] = "WFiL";
-            ArregloFil[24] = "XFiL";
-            ArregloFil[25] = "YFiL";
-            ArregloFil[26] = "ZFiL";
-
         }
 
-        public int RecuperarIndices(string parametro)
+        public string TextoCifrado
         {
-            int Resultado = -1;
+            get { return textoCifrado; }
+            set { textoCifrado = value; }
+        }
+        
 
-            if (parametro.Contains("Fil"))
+        private char cifrarcaracter(char plainChar, char keyChar)
+        {
+            if (char.IsLetter(plainChar))
             {
-                for (int i = 0; i <= ArregloFil.Length - 1; i++)
+                char baseChar = char.IsUpper(plainChar) ? 'A' : 'a';
+                int shift = keyChar - baseChar;
+                char encryptedChar = (char)((plainChar - baseChar + shift) % 26 + baseChar);
+                return encryptedChar;
+            }
+            return plainChar;
+
+           
+        }
+
+        public string Cifrar()
+        {
+
+            textoCifrado = "";
+            List<int> posicionEspacios = new List<int>();
+            string textoSinEspacios = "";
+            for (int i = 0; i < textoSinCifrar.Length; i++)
+            {
+                if (textoSinCifrar[i] == ' ')
                 {
-                    if (parametro == ArregloFil[i])
-                    {
-                        Resultado = i;
-                        break;
-                    }
+                    posicionEspacios.Add(i);
                 }
-
-            }
-            else if (parametro.Contains("Colum"))
-            {
-                for (int i = 0; i <= ArregloColum.Length - 1; i++)
+                else
                 {
-                    if (parametro == ArregloColum[i])
-                    {
-                        Resultado = i;
-                        break;
-                    }
-                }  
+                    textoSinEspacios += textoSinCifrar[i];
+                }
+            }
+            textoSinEspacios = textoSinEspacios.ToLower(); // Convertir todo el texto a minúsculas
+            clave = clave.ToLower();
 
+            for (int i = 0; i < textoSinEspacios.Length; i++)
+            {
+                char plainChar = textoSinEspacios[i];
+                char keyChar = clave[i % clave.Length];
+                char encryptedChar = cifrarcaracter(plainChar, keyChar);
+                textoCifrado += encryptedChar;
             }
 
-            return Resultado;
+            foreach (int position in posicionEspacios)
+            {
+                if (position < textoCifrado.Length)
+                {
+                    textoCifrado = textoCifrado.Insert(position, " ");
+                }
+            }
+            return textoCifrado;
         }
 
+        private char Descifrarcaracter(char cipherChar, char keyChar)
+        {
+            if (char.IsLetter(cipherChar))
+            {
+                char baseChar = char.IsUpper(cipherChar) ? 'A' : 'a';
+                int shift = keyChar - baseChar;
+                char decryptedChar = (char)((cipherChar - baseChar - shift + 26) % 26 + baseChar);
+                return decryptedChar;
+            }
+            return cipherChar;
+        }
 
+        public virtual string Descifrar()
+        {
+            
+            textoSinCifrar = "";
+            List<int> posicionEspacios = new List<int>(); 
+            string textoCifradoSinEspacios = "";
+            for (int i = 0; i < textoCifrado.Length; i++)
+            {
+                if (textoCifrado[i] == ' ')
+                {
+                    posicionEspacios.Add(i);
+                }
+                else
+                {
+                    textoCifradoSinEspacios += textoCifrado[i];
+                }
+            }
+            
+            textoCifradoSinEspacios = textoCifradoSinEspacios.ToLower(); // Convertir todo el texto cifrado a minúsculas
+            clave = clave.ToLower();
+           
+            for (int i = 0; i < textoCifradoSinEspacios.Length; i++)
+            {
+                char plainChar = textoCifradoSinEspacios[i];
+                char keyChar = clave[i % clave.Length];
+                char encryptedChar = Descifrarcaracter(plainChar, keyChar);
+                textoSinCifrar += encryptedChar;
+            }
+
+
+            // Reinsertar los espacios en las posiciones originales
+            foreach (int position in posicionEspacios)
+            {
+                if (position < textoSinCifrar.Length)
+                {
+                    textoSinCifrar = textoSinCifrar.Insert(position, " ");
+                }
+            }
+
+            return textoSinCifrar;
+        }
+       
 
 
     }
 }
+
