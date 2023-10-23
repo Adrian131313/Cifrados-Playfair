@@ -131,6 +131,7 @@ public class PlayfairCipher
     private string NormalizeText(string text)
     {
         text = text.ToUpper(); // Convierte todo el texto a mayúsculas
+        text = text.Replace('Ñ', 'N'); // Reemplaza 'Ñ' por 'N'
         text = new string(text.Where(char.IsLetter).ToArray()); // Elimina caracteres no alfabéticos
                                                                 // Asegúrate de que la longitud del texto sea par (agrega un carácter 'X' si es necesario)
         if (text.Length % 2 != 0)
@@ -142,6 +143,9 @@ public class PlayfairCipher
 
     private int[] GetMatrixPosition(char letter)
     {
+        if (letter == 'J')
+            letter = 'I'; // Tratar 'J' como 'I'
+
         int[] position = new int[2];
         for (int row = 0; row < 5; row++)
         {
