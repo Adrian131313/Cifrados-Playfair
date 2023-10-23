@@ -94,7 +94,7 @@ namespace Playfair
                 return; // Detiene la operación si faltan datos
             }
 
-            
+
 
             Vigenere encryptor = new Vigenere(textoSinCifrar, clave);
             string textoCifrado = encryptor.Cifrar();
@@ -116,7 +116,7 @@ namespace Playfair
                 return; // Detiene la operación si faltan datos
             }
 
-            
+
 
             Vigenere encryptor = new Vigenere("", clave); // Inicializar con texto vacío
             encryptor.TextoCifrado = textoCifrado;
