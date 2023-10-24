@@ -133,7 +133,17 @@ public class PlayfairCipher
         text = text.ToUpper(); // Convierte todo el texto a mayúsculas
         text = text.Replace('Ñ', 'N'); // Reemplaza 'Ñ' por 'N'
         text = new string(text.Where(char.IsLetter).ToArray()); // Elimina caracteres no alfabéticos
-                                                                // Asegúrate de que la longitud del texto sea par (agrega un carácter 'X' si es necesario)
+
+        // Agrega una 'X' entre letras repetidas
+        for (int i = 0; i < text.Length - 1; i += 2)
+        {
+            if (text[i] == text[i + 1])
+            {
+                text = text.Insert(i + 1, "X");
+            }
+        }
+
+        // Asegúrate de que la longitud del texto sea par (agrega un carácter 'X' si es necesario)
         if (text.Length % 2 != 0)
         {
             text += 'X';
