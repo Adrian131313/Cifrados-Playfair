@@ -231,7 +231,7 @@ namespace Playfair
 
         private void btnSaveCiphertext_Click(object sender, EventArgs e)
         {
-            if (playfairCipher == null)
+            if (txtEncryptedOutput == null)
             {
                 MessageBox.Show("Primero debes cifrar un texto.");
                 return;
@@ -260,7 +260,7 @@ namespace Playfair
 
         private void btnSaveDesctext_Click(object sender, EventArgs e)
         {
-            if (playfairCipher == null)
+            if (txtDecryptedOutput == null)
             {
                 MessageBox.Show("Primero debes descifrar un texto.");
                 return;
