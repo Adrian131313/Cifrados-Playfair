@@ -24,7 +24,7 @@ namespace Playfair
         }
 
         //varible alfabeto que se utiliza para asi implementar la ñ
-        private const string Alfabeto = "abcdefghijklmnñopqrstuvwxyz";
+        private const string Alfabeto = "abcdefghijklmnñopqrstuvwxyzáéíóúü";
 
         //metodo que cifra un carácter de acuerdo a la lógica del cifrado de Vigenère
         //teniendo en cuenta las mayúsculas y minúsculas  
