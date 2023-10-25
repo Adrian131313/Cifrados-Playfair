@@ -217,5 +217,7 @@ namespace Playfair
 
             this.Close();
         }
+
+        
     }
 }

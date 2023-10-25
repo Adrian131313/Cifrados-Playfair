@@ -15,7 +15,7 @@ namespace Playfair.Tests
         public void CifrarTest()
         {
 
-            Vigenere encryptor = new Vigenere("holamundo", "hola");
+            Vigenere encryptor = new Vigenere("holamundo", "hola", null);
           
             // Act (acción)
             string textoCifrado = encryptor.Cifrar();
@@ -28,7 +28,7 @@ namespace Playfair.Tests
         [TestMethod]
         public void MetodoDePrueba_ControlEspacios ()
         {
-            Vigenere encryptor = new Vigenere("la diabetes es una enfermedad metabolica cronica caracterizada por niveles elevados de glucosa en sangre  que con el tiempo conduce a daños graves en el corazon los vasos sanguineos los ojos los riñones y los nervios", "diabetes");
+            Vigenere encryptor = new Vigenere("la diabetes es una enfermedad metabolica cronica caracterizada por niveles elevados de glucosa en sangre  que con el tiempo conduce a daños graves en el corazon los vasos sanguineos los ojos los riñones y los nervios", "diabetes", null);
 
             // Act (acción)
             string textoCifrado = encryptor.Cifrar();
