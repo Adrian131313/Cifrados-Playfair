@@ -209,7 +209,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.fondo_seguridad;
+//            BackgroundImage = Properties.Resources.fondo_seguridad;
             ClientSize = new Size(625, 334);
             Controls.Add(Guardar_txt);
             Controls.Add(btnCargar);

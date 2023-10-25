@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cifrados_Seguridad
 {
-    internal class metodos_Cesar : clasePadre
+    public class metodos_Cesar : clasePadre
     {
         public int clave;
         public string textoCifrado;
