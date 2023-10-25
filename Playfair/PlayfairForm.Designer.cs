@@ -54,6 +54,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             openFileDialog = new OpenFileDialog();
             btnSaveCiphertext = new Guna.UI2.WinForms.Guna2Button();
             btnCifrado = new Guna.UI2.WinForms.Guna2Button();
@@ -75,6 +77,7 @@
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             label1 = new Label();
+            btnBack = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
             // openFileDialog
@@ -452,12 +455,35 @@
             label1.TabIndex = 64;
             label1.Text = "PLAYFAIR";
             // 
+            // btnBack
+            // 
+            btnBack.BackColor = Color.Transparent;
+            btnBack.BorderColor = Color.MediumAquamarine;
+            btnBack.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnBack.BorderThickness = 1;
+            btnBack.CustomizableEdges = customizableEdges27;
+            btnBack.DisabledState.BorderColor = Color.DarkGray;
+            btnBack.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnBack.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnBack.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnBack.FillColor = Color.Transparent;
+            btnBack.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBack.ForeColor = Color.White;
+            btnBack.Location = new Point(24, 12);
+            btnBack.Name = "btnBack";
+            btnBack.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            btnBack.Size = new Size(144, 45);
+            btnBack.TabIndex = 65;
+            btnBack.Text = "Volver";
+            btnBack.Click += btnBack_Click;
+            // 
             // PlayfairForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             ClientSize = new Size(999, 567);
+            Controls.Add(btnBack);
             Controls.Add(label1);
             Controls.Add(guna2HtmlLabel2);
             Controls.Add(guna2HtmlLabel1);
@@ -476,7 +502,10 @@
             Controls.Add(btnCifrado);
             Controls.Add(btnOpenFileEnc);
             Controls.Add(btnSaveDesctext);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "PlayfairForm";
+            TopMost = true;
+            Load += PlayfairForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -507,5 +536,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Label label1;
+        private Guna.UI2.WinForms.Guna2Button btnBack;
     }
 }

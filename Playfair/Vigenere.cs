@@ -11,7 +11,7 @@ namespace Playfair
 {
     public class Vigenere : clasePadre
     {
-        public Vigenere(string textoSinCifrar, string clave) : base(textoSinCifrar, clave)
+        public Vigenere(string textoSinCifrar, string clave, string textoCifrado) : base(textoSinCifrar, clave, textoCifrado)
         {
         }
 

@@ -12,19 +12,18 @@ namespace Cifrados_Seguridad
         protected string clave;
         protected string textoCifrado;
 
-        public clasePadre(string textoSinCifrar, string clave)
+        public clasePadre(string textoSinCifrar, string clave, string textoCifrado)
         {
             this.textoSinCifrar = textoSinCifrar;
-            this.clave = clave;
-            
-
+            this.clave = clave;            
+            this.textoCifrado = textoCifrado;
         }
         public clasePadre(string textoSinCifrar) 
         {
             this.textoSinCifrar = textoSinCifrar;
         }
 
-       
+        
 
     }
 

@@ -11,29 +11,29 @@ namespace Playfair
 
         private void btnCifrado_Click(object sender, EventArgs e)
         {
-            string key = txtUserKey.Text; // Obtiene la clave ingresada por el usuario desde el cuadro de texto
+            string clave = txtUserKey.Text; // Obtiene la clave ingresada por el usuario desde el cuadro de texto
+            string textoSinCifrar = txtInput.Text;
+
+            // Crea una instancia de PlayfairCipher con la clave y el texto sin cifrar
+            PlayfairCipher playfairCipher = new PlayfairCipher(textoSinCifrar, clave, null);
+
+            // Obtén el texto cifrado utilizando la propiedad TextoCifrado
+            string textoCifrado = playfairCipher.Encrypt();
+
+            // Muestra el texto cifrado en la interfaz de usuario o guárdalo en un archivo.
+            txtEncryptedOutput.Text = textoCifrado;
+
+            // Llama al método para obtener la representación de la matriz del alfabeto.
+            string matrixAsString = playfairCipher.GetPlayfairMatrixAsString();
 
             // Realiza validación de la clave ingresada.
-            if (string.IsNullOrWhiteSpace(key) || !IsValidKey(key))
+            if (string.IsNullOrWhiteSpace(clave) || !IsValidKey(clave))
             {
                 MessageBox.Show("La clave ingresada no es válida. Asegúrate de que solo contenga letras y no esté vacía.", "Error de clave", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return; // No se crea la instancia de PlayfairCipher si la clave no es válida.
             }
 
-            // Crea una instancia de PlayfairCipher con la clave proporcionada.
-            playfairCipher = new PlayfairCipher(key);
 
-            // La instancia de PlayfairCipher ahora está lista para su uso.
-
-
-            string plainText = txtInput.Text;
-            string encryptedText = playfairCipher.Encrypt(plainText);
-
-            // Muestra el texto cifrado en la interfaz de usuario o guárdalo en un archivo.
-            txtEncryptedOutput.Text = encryptedText;
-
-            // Llama al método para obtener la representación de la matriz del alfabeto.
-            string matrixAsString = playfairCipher.GetPlayfairMatrixAsString();
 
             // Supongamos que tienes un control TextBox llamado txtMatrixDisplay en tu interfaz de usuario.
             txtMatrix.Text = matrixAsString;
@@ -41,24 +41,26 @@ namespace Playfair
 
         private void btnDescifrado_Click(object sender, EventArgs e)
         {
-            string key = txtUserKeyDesc.Text; // Obtiene la clave ingresada por el usuario desde el cuadro de texto
+            string clave = txtUserKeyDesc.Text; // Obtiene la clave ingresada por el usuario desde el cuadro de texto
+            string textoCifrado = txtDecryptedInput.Text;
+
+            // Crea una instancia de PlayfairCipher con la clave y el texto cifrado
+            PlayfairCipher playfairCipher = new PlayfairCipher(textoCifrado, clave, textoCifrado);
+
+            // Obtén el texto descifrado utilizando el método Descifrar
+            string textoDescifrado = playfairCipher.Decrypt();
+
+            // Muestra el texto descifrado en la interfaz de usuario o guárdalo en un archivo.
+            txtDecryptedOutput.Text = textoDescifrado;
 
             // Realiza validación de la clave ingresada.
-            if (string.IsNullOrWhiteSpace(key) || !IsValidKey(key))
+            if (string.IsNullOrWhiteSpace(clave) || !IsValidKey(clave))
             {
                 MessageBox.Show("La clave ingresada no es válida. Asegúrate de que solo contenga letras y no esté vacía.", "Error de clave", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return; // No se crea la instancia de PlayfairCipher si la clave no es válida.
             }
 
-            // Crea una instancia de PlayfairCipher con la clave proporcionada.
-            playfairCipher = new PlayfairCipher(key);
 
-            // La instancia de PlayfairCipher ahora está lista para su uso.
-            string encryptedText = txtDecryptedInput.Text;
-            string decryptedText = playfairCipher.Decrypt(encryptedText);
-
-            // Muestra el texto descifrado en la interfaz de usuario o guárdalo en un archivo.
-            txtDecryptedOutput.Text = decryptedText;
         }
 
 
@@ -283,6 +285,17 @@ namespace Playfair
                     MessageBox.Show($"Error al guardar el archivo: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void PlayfairForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
         }
     }
 }

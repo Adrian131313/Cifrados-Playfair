@@ -16,27 +16,48 @@ namespace Playfair
         public FormPrincipal()
         {
             InitializeComponent();
+
         }
 
-        private void btnOpenPlayfair_Click(object sender, EventArgs e)
+        public void btnOpenPlayfair_Click(object sender, EventArgs e)
         {
             // Crea una instancia del nuevo formulario que deseas abrir.
             PlayfairForm nuevoForm = new PlayfairForm();
+            nuevoForm.TopLevel = false;
+            nuevoForm.FormBorderStyle = FormBorderStyle.None; // Asegúrate de establecer el mismo estilo de borde que en el formulario secundario
+            nuevoForm.Dock = DockStyle.Fill; // Ajusta al tamaño del formulario principal
+            nuevoForm.TopMost = true;
+            this.Controls.Add(nuevoForm);
+
+
+
+            nuevoForm.MdiParent = this; // Establece el formulario principal como el padre.
+
 
             // Llama al método Show para mostrar el formulario de manera no modal (puede interactuar con otros formularios).
             nuevoForm.Show();
+            //this.Hide();
 
             // O, si deseas mostrar el formulario de manera modal (bloquea la interacción con otros formularios hasta que se cierre):
-            // nuevoForm.ShowDialog();
+            //nuevoForm.ShowDialog();
         }
 
         private void btnOpenVigenere_Click(object sender, EventArgs e)
         {
             // Crea una instancia del nuevo formulario que deseas abrir.
             VigenereForm nuevoForm = new VigenereForm();
+            nuevoForm.TopLevel = false;
+            nuevoForm.FormBorderStyle = FormBorderStyle.None; // Asegúrate de establecer el mismo estilo de borde que en el formulario secundario
+            nuevoForm.Dock = DockStyle.Fill; // Ajusta al tamaño del formulario principal
+            this.Controls.Add(nuevoForm);
+
+
+            nuevoForm.MdiParent = this; // Establece el formulario principal como el padre.
+
 
             // Llama al método Show para mostrar el formulario de manera no modal (puede interactuar con otros formularios).
             nuevoForm.Show();
+            //this.Hide();
 
             // O, si deseas mostrar el formulario de manera modal (bloquea la interacción con otros formularios hasta que se cierre):
             // nuevoForm.ShowDialog();
@@ -45,13 +66,18 @@ namespace Playfair
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             // Crea una instancia del nuevo formulario que deseas abrir.
-            cesarform nuevoForm = new cesarform();
+            cesarform FormCesar = new cesarform();
 
             // Llama al método Show para mostrar el formulario de manera no modal (puede interactuar con otros formularios).
-            nuevoForm.Show();
+            FormCesar.Show();
 
             // O, si deseas mostrar el formulario de manera modal (bloquea la interacción con otros formularios hasta que se cierre):
             // nuevoForm.ShowDialog();
+        }
+
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

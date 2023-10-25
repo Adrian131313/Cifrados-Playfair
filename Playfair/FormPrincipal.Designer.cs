@@ -36,7 +36,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             btnOpenPlayfair = new Guna.UI2.WinForms.Guna2Button();
             btnOpenVigenere = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            btnOpenCesar = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
             // btnOpenPlayfair
@@ -48,7 +48,7 @@
             btnOpenPlayfair.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnOpenPlayfair.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnOpenPlayfair.ForeColor = Color.White;
-            btnOpenPlayfair.Location = new Point(86, 145);
+            btnOpenPlayfair.Location = new Point(401, 282);
             btnOpenPlayfair.Name = "btnOpenPlayfair";
             btnOpenPlayfair.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnOpenPlayfair.Size = new Size(180, 45);
@@ -65,7 +65,7 @@
             btnOpenVigenere.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnOpenVigenere.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnOpenVigenere.ForeColor = Color.White;
-            btnOpenVigenere.Location = new Point(329, 145);
+            btnOpenVigenere.Location = new Point(105, 282);
             btnOpenVigenere.Name = "btnOpenVigenere";
             btnOpenVigenere.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnOpenVigenere.Size = new Size(180, 45);
@@ -73,33 +73,35 @@
             btnOpenVigenere.Text = "Vigenere";
             btnOpenVigenere.Click += btnOpenVigenere_Click;
             // 
-            // guna2Button1
+            // btnOpenCesar
             // 
-            guna2Button1.CustomizableEdges = customizableEdges5;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(557, 145);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2Button1.Size = new Size(180, 45);
-            guna2Button1.TabIndex = 2;
-            guna2Button1.Text = "Cesar";
-            guna2Button1.Click += guna2Button1_Click;
+            btnOpenCesar.CustomizableEdges = customizableEdges5;
+            btnOpenCesar.DisabledState.BorderColor = Color.DarkGray;
+            btnOpenCesar.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnOpenCesar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnOpenCesar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnOpenCesar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnOpenCesar.ForeColor = Color.White;
+            btnOpenCesar.Location = new Point(703, 282);
+            btnOpenCesar.Name = "btnOpenCesar";
+            btnOpenCesar.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnOpenCesar.Size = new Size(180, 45);
+            btnOpenCesar.TabIndex = 2;
+            btnOpenCesar.Text = "Cesar";
+            btnOpenCesar.Click += guna2Button1_Click;
             // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(guna2Button1);
+            ClientSize = new Size(999, 567);
             Controls.Add(btnOpenVigenere);
             Controls.Add(btnOpenPlayfair);
+            Controls.Add(btnOpenCesar);
+            IsMdiContainer = true;
             Name = "FormPrincipal";
             Text = "FormPrincipal";
+            Load += FormPrincipal_Load;
             ResumeLayout(false);
         }
 
@@ -107,6 +109,6 @@
 
         private Guna.UI2.WinForms.Guna2Button btnOpenPlayfair;
         private Guna.UI2.WinForms.Guna2Button btnOpenVigenere;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnOpenCesar;
     }
 }

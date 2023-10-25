@@ -105,7 +105,7 @@ namespace Playfair
 
             // aqui se hace referencia a vigenere la clase donde estan los metodos y los atributos para que las variables
             // locales pasen la informacion y el formulario pueda utilizar los metodos 
-            Vigenere metodosVigenere = new Vigenere(textoSinCifrar, clave);
+            Vigenere metodosVigenere = new Vigenere(textoSinCifrar, clave, null);
             string textoCifrado = metodosVigenere.Cifrar();
 
             metodosVigenere.TextoCifrado = textoCifrado;
@@ -135,7 +135,7 @@ namespace Playfair
 
 
 
-            Vigenere metodosVigenere = new Vigenere("", clave); // Inicializar con texto vacío
+            Vigenere metodosVigenere = new Vigenere("", clave, null); // Inicializar con texto vacío
             metodosVigenere.TextoCifrado = textoCifrado;
             string textoDescifrado = metodosVigenere.Descifrar();
 
@@ -210,6 +210,12 @@ namespace Playfair
                     MessageBox.Show("Error al guardar el archivo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+
+            this.Close();
         }
     }
 }

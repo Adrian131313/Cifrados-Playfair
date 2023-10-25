@@ -52,6 +52,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VigenereForm));
             txt_fraseC = new Guna.UI2.WinForms.Guna2TextBox();
             txt_claveFraC = new Guna.UI2.WinForms.Guna2TextBox();
@@ -77,6 +79,7 @@
             txt_claveCifraD = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            btnBack = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
             // txt_fraseC
@@ -457,6 +460,28 @@
             guna2HtmlLabel4.TabIndex = 7;
             guna2HtmlLabel4.Text = "Ingrese la clave";
             // 
+            // btnBack
+            // 
+            btnBack.BackColor = Color.Transparent;
+            btnBack.BorderColor = Color.MediumAquamarine;
+            btnBack.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnBack.BorderThickness = 1;
+            btnBack.CustomizableEdges = customizableEdges25;
+            btnBack.DisabledState.BorderColor = Color.DarkGray;
+            btnBack.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnBack.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnBack.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnBack.FillColor = Color.Transparent;
+            btnBack.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBack.ForeColor = Color.White;
+            btnBack.Location = new Point(12, 12);
+            btnBack.Name = "btnBack";
+            btnBack.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            btnBack.Size = new Size(144, 45);
+            btnBack.TabIndex = 24;
+            btnBack.Text = "Volver";
+            btnBack.Click += btnBack_Click;
+            // 
             // VigenereForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -465,6 +490,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(999, 567);
+            Controls.Add(btnBack);
             Controls.Add(btn_GuardarFrase);
             Controls.Add(txt_fraseDesifrada);
             Controls.Add(txt_FraseCriptoC);
@@ -485,6 +511,7 @@
             Controls.Add(txt_CifradoD);
             Controls.Add(txt_claveFraC);
             Controls.Add(txt_fraseC);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "VigenereForm";
             Text = "Vigenere";
             Load += VigenereForm_Load;
@@ -518,5 +545,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_claveCifraD;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2Button btnBack;
     }
 }
