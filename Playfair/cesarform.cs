@@ -105,12 +105,12 @@ namespace Cifrados_Seguridad
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-           /* // Oculta el formulario actual (Form2)
-            this.Hide();
+            /* // Oculta el formulario actual (Form2)
+             this.Hide();
 
-            // Muestra el formulario anterior (Form1)
-            FormPrincipal form1 = new FormPrincipal();
-            form1.Show();*/
+             // Muestra el formulario anterior (Form1)
+             FormPrincipal form1 = new FormPrincipal();
+             form1.Show();*/
         }
 
         private void txtTextoCifrado_TextChanged(object sender, EventArgs e)

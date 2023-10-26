@@ -195,6 +195,9 @@ namespace Playfair
 
         }
 
+        private void lblInKey_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

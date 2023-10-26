@@ -64,8 +64,8 @@
             btnOpenFileEnc = new Guna.UI2.WinForms.Guna2Button();
             btnSaveDesctext = new Guna.UI2.WinForms.Guna2Button();
             btnDescifrado = new Guna.UI2.WinForms.Guna2Button();
-            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lblKeyDecrypted = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lblTextEncryptedInput = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtUserKeyDesc = new Guna.UI2.WinForms.Guna2TextBox();
             txtDecryptedInput = new Guna.UI2.WinForms.Guna2TextBox();
             btnOpenFileDesc = new Guna.UI2.WinForms.Guna2Button();
@@ -76,11 +76,15 @@
             txtEncryptedOutput = new Guna.UI2.WinForms.Guna2TextBox();
             txtMatrix = new Guna.UI2.WinForms.Guna2TextBox();
             txtDecryptedOutput = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            label1 = new Label();
+            lblInKey = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lblText = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lblTitle = new Label();
             btnBack = new Guna.UI2.WinForms.Guna2Button();
             txtMatrixDec = new Guna.UI2.WinForms.Guna2TextBox();
+            lblEncryp = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lblTextDecryptedOutput = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lblMatrixEncryp = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lblMatrixDecrypted = new Guna.UI2.WinForms.Guna2HtmlLabel();
             SuspendLayout();
             // 
             // btnSaveCiphertext
@@ -97,7 +101,7 @@
             btnSaveCiphertext.FillColor = Color.Transparent;
             btnSaveCiphertext.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnSaveCiphertext.ForeColor = Color.White;
-            btnSaveCiphertext.Location = new Point(518, 220);
+            btnSaveCiphertext.Location = new Point(349, 221);
             btnSaveCiphertext.Name = "btnSaveCiphertext";
             btnSaveCiphertext.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnSaveCiphertext.Size = new Size(144, 45);
@@ -119,7 +123,7 @@
             btnCifrado.FillColor = Color.Transparent;
             btnCifrado.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnCifrado.ForeColor = Color.White;
-            btnCifrado.Location = new Point(518, 158);
+            btnCifrado.Location = new Point(349, 159);
             btnCifrado.Name = "btnCifrado";
             btnCifrado.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnCifrado.Size = new Size(144, 45);
@@ -141,7 +145,7 @@
             btnOpenFileEnc.FillColor = Color.Transparent;
             btnOpenFileEnc.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnOpenFileEnc.ForeColor = Color.White;
-            btnOpenFileEnc.Location = new Point(518, 95);
+            btnOpenFileEnc.Location = new Point(349, 96);
             btnOpenFileEnc.Name = "btnOpenFileEnc";
             btnOpenFileEnc.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnOpenFileEnc.Size = new Size(144, 45);
@@ -164,7 +168,7 @@
             btnSaveDesctext.FillColor = Color.Transparent;
             btnSaveDesctext.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnSaveDesctext.ForeColor = Color.White;
-            btnSaveDesctext.Location = new Point(518, 465);
+            btnSaveDesctext.Location = new Point(349, 465);
             btnSaveDesctext.Name = "btnSaveDesctext";
             btnSaveDesctext.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btnSaveDesctext.Size = new Size(144, 45);
@@ -186,7 +190,7 @@
             btnDescifrado.FillColor = Color.Transparent;
             btnDescifrado.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnDescifrado.ForeColor = Color.White;
-            btnDescifrado.Location = new Point(518, 402);
+            btnDescifrado.Location = new Point(349, 402);
             btnDescifrado.Name = "btnDescifrado";
             btnDescifrado.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnDescifrado.Size = new Size(144, 45);
@@ -195,27 +199,27 @@
             btnDescifrado.Tile = true;
             btnDescifrado.Click += btnDescifrado_Click;
             // 
-            // guna2HtmlLabel4
+            // lblKeyDecrypted
             // 
-            guna2HtmlLabel4.BackColor = Color.Transparent;
-            guna2HtmlLabel4.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel4.ForeColor = Color.White;
-            guna2HtmlLabel4.Location = new Point(12, 518);
-            guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            guna2HtmlLabel4.Size = new Size(143, 22);
-            guna2HtmlLabel4.TabIndex = 55;
-            guna2HtmlLabel4.Text = "Ingrese la clave";
+            lblKeyDecrypted.BackColor = Color.Transparent;
+            lblKeyDecrypted.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblKeyDecrypted.ForeColor = Color.White;
+            lblKeyDecrypted.Location = new Point(22, 465);
+            lblKeyDecrypted.Name = "lblKeyDecrypted";
+            lblKeyDecrypted.Size = new Size(143, 22);
+            lblKeyDecrypted.TabIndex = 55;
+            lblKeyDecrypted.Text = "Ingrese la clave";
             // 
-            // guna2HtmlLabel3
+            // lblTextEncryptedInput
             // 
-            guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel3.ForeColor = Color.White;
-            guna2HtmlLabel3.Location = new Point(12, 338);
-            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(161, 22);
-            guna2HtmlLabel3.TabIndex = 54;
-            guna2HtmlLabel3.Text = "Ingrese el cifrado";
+            lblTextEncryptedInput.BackColor = Color.Transparent;
+            lblTextEncryptedInput.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTextEncryptedInput.ForeColor = Color.White;
+            lblTextEncryptedInput.Location = new Point(22, 312);
+            lblTextEncryptedInput.Name = "lblTextEncryptedInput";
+            lblTextEncryptedInput.Size = new Size(167, 22);
+            lblTextEncryptedInput.TabIndex = 54;
+            lblTextEncryptedInput.Text = "Ingrese el cifrado:";
             // 
             // txtUserKeyDesc
             // 
@@ -231,13 +235,13 @@
             txtUserKeyDesc.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtUserKeyDesc.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtUserKeyDesc.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtUserKeyDesc.Location = new Point(220, 508);
+            txtUserKeyDesc.Location = new Point(22, 491);
             txtUserKeyDesc.Name = "txtUserKeyDesc";
             txtUserKeyDesc.PasswordChar = '\0';
             txtUserKeyDesc.PlaceholderText = "";
             txtUserKeyDesc.SelectedText = "";
             txtUserKeyDesc.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txtUserKeyDesc.Size = new Size(229, 36);
+            txtUserKeyDesc.Size = new Size(276, 36);
             txtUserKeyDesc.TabIndex = 53;
             // 
             // txtDecryptedInput
@@ -255,14 +259,14 @@
             txtDecryptedInput.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtDecryptedInput.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtDecryptedInput.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtDecryptedInput.Location = new Point(220, 338);
+            txtDecryptedInput.Location = new Point(22, 338);
             txtDecryptedInput.Multiline = true;
             txtDecryptedInput.Name = "txtDecryptedInput";
             txtDecryptedInput.PasswordChar = '\0';
             txtDecryptedInput.PlaceholderText = "";
             txtDecryptedInput.SelectedText = "";
             txtDecryptedInput.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            txtDecryptedInput.Size = new Size(262, 152);
+            txtDecryptedInput.Size = new Size(276, 109);
             txtDecryptedInput.TabIndex = 52;
             // 
             // btnOpenFileDesc
@@ -279,7 +283,7 @@
             btnOpenFileDesc.FillColor = Color.Transparent;
             btnOpenFileDesc.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnOpenFileDesc.ForeColor = Color.White;
-            btnOpenFileDesc.Location = new Point(518, 338);
+            btnOpenFileDesc.Location = new Point(349, 338);
             btnOpenFileDesc.Name = "btnOpenFileDesc";
             btnOpenFileDesc.ShadowDecoration.CustomizableEdges = customizableEdges16;
             btnOpenFileDesc.Size = new Size(144, 45);
@@ -304,14 +308,14 @@
             txtInput.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtInput.ForeColor = Color.MediumAquamarine;
             txtInput.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtInput.Location = new Point(220, 96);
+            txtInput.Location = new Point(22, 83);
             txtInput.Multiline = true;
             txtInput.Name = "txtInput";
             txtInput.PasswordChar = '\0';
             txtInput.PlaceholderText = "";
             txtInput.SelectedText = "";
             txtInput.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            txtInput.Size = new Size(262, 151);
+            txtInput.Size = new Size(276, 121);
             txtInput.TabIndex = 57;
             // 
             // txtUserKey
@@ -329,14 +333,14 @@
             txtUserKey.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtUserKey.ForeColor = Color.MediumAquamarine;
             txtUserKey.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtUserKey.Location = new Point(220, 268);
+            txtUserKey.Location = new Point(22, 246);
             txtUserKey.Name = "txtUserKey";
             txtUserKey.PasswordChar = '\0';
             txtUserKey.PlaceholderForeColor = Color.LightSteelBlue;
             txtUserKey.PlaceholderText = "";
             txtUserKey.SelectedText = "";
             txtUserKey.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            txtUserKey.Size = new Size(262, 36);
+            txtUserKey.Size = new Size(276, 36);
             txtUserKey.TabIndex = 58;
             // 
             // txtEncryptedOutput
@@ -359,6 +363,7 @@
             txtEncryptedOutput.Name = "txtEncryptedOutput";
             txtEncryptedOutput.PasswordChar = '\0';
             txtEncryptedOutput.PlaceholderText = "";
+            txtEncryptedOutput.ReadOnly = true;
             txtEncryptedOutput.SelectedText = "";
             txtEncryptedOutput.ShadowDecoration.CustomizableEdges = customizableEdges22;
             txtEncryptedOutput.Size = new Size(262, 151);
@@ -379,12 +384,13 @@
             txtMatrix.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtMatrix.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             txtMatrix.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtMatrix.Location = new Point(34, 125);
+            txtMatrix.Location = new Point(541, 103);
             txtMatrix.Margin = new Padding(5, 5, 5, 5);
             txtMatrix.Multiline = true;
             txtMatrix.Name = "txtMatrix";
             txtMatrix.PasswordChar = '\0';
             txtMatrix.PlaceholderText = "";
+            txtMatrix.ReadOnly = true;
             txtMatrix.SelectedText = "";
             txtMatrix.ShadowDecoration.CustomizableEdges = customizableEdges24;
             txtMatrix.Size = new Size(121, 144);
@@ -411,44 +417,46 @@
             txtDecryptedOutput.Name = "txtDecryptedOutput";
             txtDecryptedOutput.PasswordChar = '\0';
             txtDecryptedOutput.PlaceholderText = "";
+            txtDecryptedOutput.ReadOnly = true;
             txtDecryptedOutput.SelectedText = "";
             txtDecryptedOutput.ShadowDecoration.CustomizableEdges = customizableEdges26;
             txtDecryptedOutput.Size = new Size(262, 152);
             txtDecryptedOutput.TabIndex = 61;
             // 
-            // guna2HtmlLabel1
+            // lblInKey
             // 
-            guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel1.ForeColor = Color.White;
-            guna2HtmlLabel1.Location = new Point(12, 282);
-            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(143, 22);
-            guna2HtmlLabel1.TabIndex = 62;
-            guna2HtmlLabel1.Text = "Ingrese la clave";
+            lblInKey.BackColor = Color.Transparent;
+            lblInKey.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblInKey.ForeColor = Color.White;
+            lblInKey.Location = new Point(22, 221);
+            lblInKey.Name = "lblInKey";
+            lblInKey.Size = new Size(143, 22);
+            lblInKey.TabIndex = 62;
+            lblInKey.Text = "Ingrese la clave";
+            lblInKey.Click += lblInKey_Click;
             // 
-            // guna2HtmlLabel2
+            // lblText
             // 
-            guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel2.ForeColor = Color.White;
-            guna2HtmlLabel2.Location = new Point(12, 95);
-            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(146, 22);
-            guna2HtmlLabel2.TabIndex = 63;
-            guna2HtmlLabel2.Text = "Ingrese el texto";
+            lblText.BackColor = Color.Transparent;
+            lblText.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblText.ForeColor = Color.White;
+            lblText.Location = new Point(22, 55);
+            lblText.Name = "lblText";
+            lblText.Size = new Size(152, 22);
+            lblText.TabIndex = 63;
+            lblText.Text = "Ingrese el texto:";
             // 
-            // label1
+            // lblTitle
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Impact", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(419, 27);
-            label1.Name = "label1";
-            label1.Size = new Size(129, 39);
-            label1.TabIndex = 64;
-            label1.Text = "PLAYFAIR";
+            lblTitle.AutoSize = true;
+            lblTitle.BackColor = Color.Transparent;
+            lblTitle.Font = new Font("Impact", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTitle.ForeColor = Color.White;
+            lblTitle.Location = new Point(428, 12);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(129, 39);
+            lblTitle.TabIndex = 64;
+            lblTitle.Text = "PLAYFAIR";
             // 
             // btnBack
             // 
@@ -464,10 +472,10 @@
             btnBack.FillColor = Color.Transparent;
             btnBack.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(24, 12);
+            btnBack.Location = new Point(11, 6);
             btnBack.Name = "btnBack";
             btnBack.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            btnBack.Size = new Size(144, 45);
+            btnBack.Size = new Size(98, 32);
             btnBack.TabIndex = 65;
             btnBack.Text = "Volver";
             btnBack.Click += btnBack_Click;
@@ -487,17 +495,62 @@
             txtMatrixDec.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtMatrixDec.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             txtMatrixDec.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtMatrixDec.Location = new Point(34, 366);
+            txtMatrixDec.Location = new Point(541, 340);
             txtMatrixDec.Margin = new Padding(5, 5, 5, 5);
             txtMatrixDec.Multiline = true;
             txtMatrixDec.Name = "txtMatrixDec";
             txtMatrixDec.PasswordChar = '\0';
             txtMatrixDec.PlaceholderText = "";
+            txtMatrixDec.ReadOnly = true;
             txtMatrixDec.SelectedText = "";
             txtMatrixDec.ShadowDecoration.CustomizableEdges = customizableEdges30;
             txtMatrixDec.Size = new Size(121, 144);
             txtMatrixDec.TabIndex = 66;
             txtMatrixDec.TextAlign = HorizontalAlignment.Center;
+            // 
+            // lblEncryp
+            // 
+            lblEncryp.BackColor = Color.Transparent;
+            lblEncryp.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblEncryp.ForeColor = Color.White;
+            lblEncryp.Location = new Point(687, 68);
+            lblEncryp.Name = "lblEncryp";
+            lblEncryp.Size = new Size(74, 22);
+            lblEncryp.TabIndex = 67;
+            lblEncryp.Text = "Cifrado:";
+            // 
+            // lblTextDecryptedOutput
+            // 
+            lblTextDecryptedOutput.BackColor = Color.Transparent;
+            lblTextDecryptedOutput.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTextDecryptedOutput.ForeColor = Color.White;
+            lblTextDecryptedOutput.Location = new Point(687, 310);
+            lblTextDecryptedOutput.Name = "lblTextDecryptedOutput";
+            lblTextDecryptedOutput.Size = new Size(104, 22);
+            lblTextDecryptedOutput.TabIndex = 68;
+            lblTextDecryptedOutput.Text = "Descifrado:";
+            // 
+            // lblMatrixEncryp
+            // 
+            lblMatrixEncryp.BackColor = Color.Transparent;
+            lblMatrixEncryp.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblMatrixEncryp.ForeColor = Color.White;
+            lblMatrixEncryp.Location = new Point(566, 68);
+            lblMatrixEncryp.Name = "lblMatrixEncryp";
+            lblMatrixEncryp.Size = new Size(59, 22);
+            lblMatrixEncryp.TabIndex = 69;
+            lblMatrixEncryp.Text = "Matriz";
+            // 
+            // lblMatrixDecrypted
+            // 
+            lblMatrixDecrypted.BackColor = Color.Transparent;
+            lblMatrixDecrypted.Font = new Font("Lucida Sans Unicode", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblMatrixDecrypted.ForeColor = Color.White;
+            lblMatrixDecrypted.Location = new Point(566, 310);
+            lblMatrixDecrypted.Name = "lblMatrixDecrypted";
+            lblMatrixDecrypted.Size = new Size(59, 22);
+            lblMatrixDecrypted.TabIndex = 70;
+            lblMatrixDecrypted.Text = "Matriz";
             // 
             // PlayfairForm
             // 
@@ -505,19 +558,23 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             ClientSize = new Size(999, 567);
+            Controls.Add(lblMatrixDecrypted);
+            Controls.Add(lblMatrixEncryp);
+            Controls.Add(lblInKey);
+            Controls.Add(lblTextDecryptedOutput);
+            Controls.Add(lblEncryp);
             Controls.Add(txtMatrixDec);
             Controls.Add(btnBack);
-            Controls.Add(label1);
-            Controls.Add(guna2HtmlLabel2);
-            Controls.Add(guna2HtmlLabel1);
+            Controls.Add(lblTitle);
+            Controls.Add(lblText);
             Controls.Add(txtDecryptedOutput);
             Controls.Add(txtMatrix);
             Controls.Add(txtEncryptedOutput);
             Controls.Add(txtUserKey);
             Controls.Add(txtInput);
             Controls.Add(btnOpenFileDesc);
-            Controls.Add(guna2HtmlLabel4);
-            Controls.Add(guna2HtmlLabel3);
+            Controls.Add(lblKeyDecrypted);
+            Controls.Add(lblTextEncryptedInput);
             Controls.Add(txtUserKeyDesc);
             Controls.Add(txtDecryptedInput);
             Controls.Add(btnDescifrado);
@@ -544,8 +601,8 @@
         private Guna.UI2.WinForms.Guna2Button btnOpenFileEnc;
         private Guna.UI2.WinForms.Guna2Button btnSaveDesctext;
         private Guna.UI2.WinForms.Guna2Button btnDescifrado;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblKeyDecrypted;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTextEncryptedInput;
         private Guna.UI2.WinForms.Guna2TextBox txtUserKeyDesc;
         private Guna.UI2.WinForms.Guna2TextBox txtDecryptedInput;
         private Guna.UI2.WinForms.Guna2Button btnOpenFileDesc;
@@ -556,10 +613,14 @@
         private Guna.UI2.WinForms.Guna2TextBox txtEncryptedOutput;
         private Guna.UI2.WinForms.Guna2TextBox txtMatrix;
         private Guna.UI2.WinForms.Guna2TextBox txtDecryptedOutput;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Label label1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblInKey;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblText;
+        private Label lblTitle;
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private Guna.UI2.WinForms.Guna2TextBox txtMatrixDec;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblEncryp;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTextDecryptedOutput;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblMatrixEncryp;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblMatrixDecrypted;
     }
 }
