@@ -28,7 +28,7 @@ namespace Playfair
 
         //metodo que cifra un carácter de acuerdo a la lógica del cifrado de Vigenère
         //teniendo en cuenta las mayúsculas y minúsculas  
-        private char cifrarcaracter(char plainChar, char keyChar)
+        public char cifrarcaracter(char plainChar, char keyChar)
         {
 
             //este if verifica si tanto plainChar (lo que se usa para la frase ingresada)como keyChar(la clave)
@@ -86,7 +86,7 @@ namespace Playfair
 
         //metodo que descifra un carácter de acuerdo a la lógica del cifrado de Vigenère
         //teniendo en cuenta las mayúsculas y minúsculas
-        private char Descifrarcaracter(char cipherChar, char keyChar)
+        public char Descifrarcaracter(char cipherChar, char keyChar)
         {
             //este if verifica si tanto plainChar (lo que se usa para la frase ingresada)como keyChar(la clave)
             //están presentes en el alfabeto definido en la variable Alfabeto. Para garantizar la comparación insensible a mayúsculas y minúsculas, convierte ambos caracteres a minúsculas usando char.ToLower()

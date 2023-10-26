@@ -18,78 +18,10 @@ namespace Playfair
             InitializeComponent();
         }
 
-        //boton para abrir un txt de un texto cifrado
-        private void guna2Button6_Click(object sender, EventArgs e)
-        {
-            // Configura las propiedades del OpenFileDialog
-            abrirtxtocifrado.Filter = "Archivos de texto (*.txt)|*.txt";
-            abrirtxtocifrado.Title = "Seleccionar archivo de texto";
-
-            // Abre el diálogo para seleccionar un archivo
-            if (abrirtxtocifrado.ShowDialog() == DialogResult.OK)
-            {
-                // Obtiene la ruta del archivo seleccionado
-                string filePath = abrirtxtocifrado.FileName;
-
-                try
-                {
-                    // Lee el contenido del archivo y lo pone en el TextBox
-                    string contenido = File.ReadAllText(filePath);
-                    txt_CifradoD.Text = contenido;
-                }
-                catch (Exception ex)
-                {
-                    // Maneja cualquier excepción que pueda ocurrir al abrir el archivo mostrara el mensaje 
-                    MessageBox.Show("Error al abrir el archivo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-
-        }
-
-        //boton para abir un txt de un texto sin cifrar 
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-            // Configura las propiedades del OpenFileDialog
-            abrirtxtFrase.Filter = "Archivos de texto (*.txt)|*.txt";
-            abrirtxtFrase.Title = "Seleccionar archivo de texto";
-
-            // Abre el diálogo para seleccionar un archivo
-            if (abrirtxtFrase.ShowDialog() == DialogResult.OK)
-            {
-                // Obtiene la ruta del archivo seleccionado
-                string filePath = abrirtxtFrase.FileName;
-
-                try
-                {
-                    // Lee el contenido del archivo y lo carga en el TextBox
-                    string contenido = File.ReadAllText(filePath);
-                    txt_fraseC.Text = contenido;
-                }
-                catch (Exception ex)
-                {
-                    // Maneja cualquier excepción que pueda ocurrir al abrir el archivo
-                    MessageBox.Show("Error al abrir el archivo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
-
-
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_cifrar_Click(object sender, EventArgs e)
         {
-            string textoSinCifrar = txt_fraseC.Text;
-            string clave = txt_claveFraC.Text;
+            string textoSinCifrar = txtFraseC.Text;
+            string clave = txtClaveFraC.Text;
             //controla que no se dejen textbox vacios 
             if (string.IsNullOrWhiteSpace(textoSinCifrar) || string.IsNullOrWhiteSpace(clave))
             {
@@ -110,15 +42,15 @@ namespace Playfair
 
             metodosVigenere.TextoCifrado = textoCifrado;
 
-            txt_FraseCriptoC.Text = textoCifrado;
+            txtFraseCriptoC.Text = textoCifrado;
 
         }
 
 
         private void btn_descifrar_Click(object sender, EventArgs e)
         {
-            string textoCifrado = txt_CifradoD.Text;
-            string clave = txt_claveCifraD.Text;
+            string textoCifrado = txtCifradoD.Text;
+            string clave = txtClaveCifraD.Text;
             // se controla que los txt del desifrado no esten vacios 
 
             if (string.IsNullOrWhiteSpace(textoCifrado) || string.IsNullOrWhiteSpace(clave))
@@ -139,17 +71,10 @@ namespace Playfair
             metodosVigenere.TextoCifrado = textoCifrado;
             string textoDescifrado = metodosVigenere.Descifrar();
 
-            txt_fraseDesifrada.Text = textoDescifrado;
-        }
-        private void VigenereForm_Load(object sender, EventArgs e)
-        {
-
+            txtFraseDesifrada.Text = textoDescifrado;
         }
 
-        private void txt_CifradoD_TextChanged(object sender, EventArgs e)
-        {
 
-        }
 
         //el boton que hara el guardado de el cifrado con ayuda del saveFiledialog llamado(guardarCifrado)
         private void btn_guardarCifrado_Click(object sender, EventArgs e)
@@ -167,7 +92,7 @@ namespace Playfair
                 try
                 {
                     // Obtiene el contenido del TextBox
-                    string contenido = txt_FraseCriptoC.Text;
+                    string contenido = txtFraseCriptoC.Text;
 
                     // Guarda el contenido en el archivo
                     File.WriteAllText(filePath, contenido);
@@ -197,7 +122,7 @@ namespace Playfair
                 try
                 {
                     // Obtiene el contenido del TextBox
-                    string contenido = txt_fraseDesifrada.Text;
+                    string contenido = txtFraseDesifrada.Text;
 
                     // Guarda el contenido en el archivo
                     File.WriteAllText(filePath, contenido);
@@ -218,6 +143,56 @@ namespace Playfair
             this.Close();
         }
 
-        
+        private void btnAbrirCifrado_Click(object sender, EventArgs e)
+        {
+            // Configura las propiedades del OpenFileDialog
+            abrirtxtocifrado.Filter = "Archivos de texto (*.txt)|*.txt";
+            abrirtxtocifrado.Title = "Seleccionar archivo de texto";
+
+            // Abre el diálogo para seleccionar un archivo
+            if (abrirtxtocifrado.ShowDialog() == DialogResult.OK)
+            {
+                // Obtiene la ruta del archivo seleccionado
+                string filePath = abrirtxtocifrado.FileName;
+
+                try
+                {
+                    // Lee el contenido del archivo y lo pone en el TextBox
+                    string contenido = File.ReadAllText(filePath);
+                    txtCifradoD.Text = contenido;
+                }
+                catch (Exception ex)
+                {
+                    // Maneja cualquier excepción que pueda ocurrir al abrir el archivo mostrara el mensaje 
+                    MessageBox.Show("Error al abrir el archivo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btnAbrirFrase_Click(object sender, EventArgs e)
+        {
+            // Configura las propiedades del OpenFileDialog
+            abrirtxtFrase.Filter = "Archivos de texto (*.txt)|*.txt";
+            abrirtxtFrase.Title = "Seleccionar archivo de texto";
+
+            // Abre el diálogo para seleccionar un archivo
+            if (abrirtxtFrase.ShowDialog() == DialogResult.OK)
+            {
+                // Obtiene la ruta del archivo seleccionado
+                string filePath = abrirtxtFrase.FileName;
+
+                try
+                {
+                    // Lee el contenido del archivo y lo carga en el TextBox
+                    string contenido = File.ReadAllText(filePath);
+                    txtFraseC.Text = contenido;
+                }
+                catch (Exception ex)
+                {
+                    // Maneja cualquier excepción que pueda ocurrir al abrir el archivo
+                    MessageBox.Show("Error al abrir el archivo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

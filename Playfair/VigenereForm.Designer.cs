@@ -28,112 +28,110 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges42 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges43 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges44 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges45 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges46 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges47 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges48 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges49 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges50 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges51 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges52 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VigenereForm));
-            txt_fraseC = new Guna.UI2.WinForms.Guna2TextBox();
-            txt_claveFraC = new Guna.UI2.WinForms.Guna2TextBox();
+            txtFraseC = new Guna.UI2.WinForms.Guna2TextBox();
+            txtClaveFraC = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             lbl_desencriptacion = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            btn_guardarCifrado = new Guna.UI2.WinForms.Guna2Button();
-            btn_abrirFrase = new Guna.UI2.WinForms.Guna2Button();
-            btn_abrirCifrado = new Guna.UI2.WinForms.Guna2Button();
-            btn_cifrar = new Guna.UI2.WinForms.Guna2Button();
-            btn_descifrar = new Guna.UI2.WinForms.Guna2Button();
+            btnGuardarCifrado = new Guna.UI2.WinForms.Guna2Button();
+            btnAbrirFrase = new Guna.UI2.WinForms.Guna2Button();
+            btnAbrirCifrado = new Guna.UI2.WinForms.Guna2Button();
+            btnCifrar = new Guna.UI2.WinForms.Guna2Button();
+            btnDescifrar = new Guna.UI2.WinForms.Guna2Button();
             label1 = new Label();
-            txt_FraseCriptoC = new Guna.UI2.WinForms.Guna2TextBox();
-            txt_fraseDesifrada = new Guna.UI2.WinForms.Guna2TextBox();
+            txtFraseCriptoC = new Guna.UI2.WinForms.Guna2TextBox();
+            txtFraseDesifrada = new Guna.UI2.WinForms.Guna2TextBox();
             abrirtxtFrase = new OpenFileDialog();
             abrirtxtocifrado = new OpenFileDialog();
-            btn_GuardarFrase = new Guna.UI2.WinForms.Guna2Button();
+            btnGuardarFrase = new Guna.UI2.WinForms.Guna2Button();
             guardarCifrado = new SaveFileDialog();
             guardarFrase = new SaveFileDialog();
-            txt_CifradoD = new Guna.UI2.WinForms.Guna2TextBox();
-            txt_claveCifraD = new Guna.UI2.WinForms.Guna2TextBox();
+            txtCifradoD = new Guna.UI2.WinForms.Guna2TextBox();
+            txtClaveCifraD = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             btnBack = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
-            // txt_fraseC
+            // txtFraseC
             // 
-            txt_fraseC.BackColor = Color.White;
-            txt_fraseC.BorderColor = Color.MediumAquamarine;
-            txt_fraseC.BorderThickness = 0;
-            txt_fraseC.CustomizableEdges = customizableEdges27;
-            txt_fraseC.DefaultText = "";
-            txt_fraseC.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txt_fraseC.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txt_fraseC.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txt_fraseC.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txt_fraseC.FillColor = Color.Black;
-            txt_fraseC.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_fraseC.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_fraseC.ForeColor = Color.MediumAquamarine;
-            txt_fraseC.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_fraseC.Location = new Point(158, 121);
-            txt_fraseC.Multiline = true;
-            txt_fraseC.Name = "txt_fraseC";
-            txt_fraseC.PasswordChar = '\0';
-            txt_fraseC.PlaceholderText = "";
-            txt_fraseC.SelectedText = "";
-            txt_fraseC.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            txt_fraseC.Size = new Size(314, 107);
-            txt_fraseC.TabIndex = 0;
-            txt_fraseC.TextChanged += guna2TextBox1_TextChanged;
+            txtFraseC.BackColor = Color.White;
+            txtFraseC.BorderColor = Color.MediumAquamarine;
+            txtFraseC.BorderThickness = 0;
+            txtFraseC.CustomizableEdges = customizableEdges1;
+            txtFraseC.DefaultText = "";
+            txtFraseC.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtFraseC.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtFraseC.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtFraseC.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtFraseC.FillColor = Color.Black;
+            txtFraseC.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtFraseC.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtFraseC.ForeColor = Color.MediumAquamarine;
+            txtFraseC.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtFraseC.Location = new Point(158, 121);
+            txtFraseC.Multiline = true;
+            txtFraseC.Name = "txtFraseC";
+            txtFraseC.PasswordChar = '\0';
+            txtFraseC.PlaceholderText = "";
+            txtFraseC.SelectedText = "";
+            txtFraseC.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtFraseC.Size = new Size(314, 107);
+            txtFraseC.TabIndex = 0;
             // 
-            // txt_claveFraC
+            // txtClaveFraC
             // 
-            txt_claveFraC.BorderColor = Color.MediumAquamarine;
-            txt_claveFraC.BorderThickness = 0;
-            txt_claveFraC.CustomizableEdges = customizableEdges29;
-            txt_claveFraC.DefaultText = "";
-            txt_claveFraC.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txt_claveFraC.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txt_claveFraC.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txt_claveFraC.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txt_claveFraC.FillColor = Color.Transparent;
-            txt_claveFraC.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_claveFraC.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_claveFraC.ForeColor = Color.MediumAquamarine;
-            txt_claveFraC.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_claveFraC.Location = new Point(158, 234);
-            txt_claveFraC.Name = "txt_claveFraC";
-            txt_claveFraC.PasswordChar = '\0';
-            txt_claveFraC.PlaceholderForeColor = Color.LightSteelBlue;
-            txt_claveFraC.PlaceholderText = "";
-            txt_claveFraC.SelectedText = "";
-            txt_claveFraC.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            txt_claveFraC.Size = new Size(212, 36);
-            txt_claveFraC.TabIndex = 1;
-            txt_claveFraC.TextChanged += guna2TextBox2_TextChanged;
+            txtClaveFraC.BorderColor = Color.MediumAquamarine;
+            txtClaveFraC.BorderThickness = 0;
+            txtClaveFraC.CustomizableEdges = customizableEdges3;
+            txtClaveFraC.DefaultText = "";
+            txtClaveFraC.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtClaveFraC.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtClaveFraC.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtClaveFraC.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtClaveFraC.FillColor = Color.Transparent;
+            txtClaveFraC.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtClaveFraC.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtClaveFraC.ForeColor = Color.MediumAquamarine;
+            txtClaveFraC.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtClaveFraC.Location = new Point(158, 234);
+            txtClaveFraC.Name = "txtClaveFraC";
+            txtClaveFraC.PasswordChar = '\0';
+            txtClaveFraC.PlaceholderForeColor = Color.LightSteelBlue;
+            txtClaveFraC.PlaceholderText = "";
+            txtClaveFraC.SelectedText = "";
+            txtClaveFraC.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtClaveFraC.Size = new Size(212, 36);
+            txtClaveFraC.TabIndex = 1;
             // 
             // guna2HtmlLabel1
             // 
@@ -190,116 +188,116 @@
             lbl_desencriptacion.TabIndex = 11;
             lbl_desencriptacion.Text = null;
             // 
-            // btn_guardarCifrado
+            // btnGuardarCifrado
             // 
-            btn_guardarCifrado.BackColor = Color.Transparent;
-            btn_guardarCifrado.BorderColor = Color.MediumAquamarine;
-            btn_guardarCifrado.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            btn_guardarCifrado.BorderThickness = 1;
-            btn_guardarCifrado.CustomizableEdges = customizableEdges31;
-            btn_guardarCifrado.DisabledState.BorderColor = Color.DarkGray;
-            btn_guardarCifrado.DisabledState.CustomBorderColor = Color.DarkGray;
-            btn_guardarCifrado.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btn_guardarCifrado.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btn_guardarCifrado.FillColor = Color.Transparent;
-            btn_guardarCifrado.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_guardarCifrado.ForeColor = Color.White;
-            btn_guardarCifrado.Location = new Point(491, 253);
-            btn_guardarCifrado.Name = "btn_guardarCifrado";
-            btn_guardarCifrado.ShadowDecoration.CustomizableEdges = customizableEdges32;
-            btn_guardarCifrado.Size = new Size(144, 45);
-            btn_guardarCifrado.TabIndex = 13;
-            btn_guardarCifrado.Text = "Guardar txt";
-            btn_guardarCifrado.Click += btn_guardarCifrado_Click;
+            btnGuardarCifrado.BackColor = Color.Transparent;
+            btnGuardarCifrado.BorderColor = Color.MediumAquamarine;
+            btnGuardarCifrado.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnGuardarCifrado.BorderThickness = 1;
+            btnGuardarCifrado.CustomizableEdges = customizableEdges5;
+            btnGuardarCifrado.DisabledState.BorderColor = Color.DarkGray;
+            btnGuardarCifrado.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnGuardarCifrado.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnGuardarCifrado.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnGuardarCifrado.FillColor = Color.Transparent;
+            btnGuardarCifrado.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnGuardarCifrado.ForeColor = Color.White;
+            btnGuardarCifrado.Location = new Point(491, 253);
+            btnGuardarCifrado.Name = "btnGuardarCifrado";
+            btnGuardarCifrado.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnGuardarCifrado.Size = new Size(144, 45);
+            btnGuardarCifrado.TabIndex = 13;
+            btnGuardarCifrado.Text = "Guardar txt";
+            btnGuardarCifrado.Click += btn_guardarCifrado_Click;
             // 
-            // btn_abrirFrase
+            // btnAbrirFrase
             // 
-            btn_abrirFrase.BackColor = Color.Transparent;
-            btn_abrirFrase.BorderColor = Color.MediumAquamarine;
-            btn_abrirFrase.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            btn_abrirFrase.BorderThickness = 1;
-            btn_abrirFrase.CustomizableEdges = customizableEdges33;
-            btn_abrirFrase.DisabledState.BorderColor = Color.DarkGray;
-            btn_abrirFrase.DisabledState.CustomBorderColor = Color.DarkGray;
-            btn_abrirFrase.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btn_abrirFrase.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btn_abrirFrase.FillColor = Color.Transparent;
-            btn_abrirFrase.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_abrirFrase.ForeColor = Color.White;
-            btn_abrirFrase.Location = new Point(491, 121);
-            btn_abrirFrase.Name = "btn_abrirFrase";
-            btn_abrirFrase.ShadowDecoration.CustomizableEdges = customizableEdges34;
-            btn_abrirFrase.Size = new Size(144, 45);
-            btn_abrirFrase.TabIndex = 14;
-            btn_abrirFrase.Text = "Abrir txt";
-            btn_abrirFrase.Click += guna2Button3_Click;
+            btnAbrirFrase.BackColor = Color.Transparent;
+            btnAbrirFrase.BorderColor = Color.MediumAquamarine;
+            btnAbrirFrase.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnAbrirFrase.BorderThickness = 1;
+            btnAbrirFrase.CustomizableEdges = customizableEdges7;
+            btnAbrirFrase.DisabledState.BorderColor = Color.DarkGray;
+            btnAbrirFrase.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnAbrirFrase.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnAbrirFrase.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnAbrirFrase.FillColor = Color.Transparent;
+            btnAbrirFrase.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAbrirFrase.ForeColor = Color.White;
+            btnAbrirFrase.Location = new Point(491, 121);
+            btnAbrirFrase.Name = "btnAbrirFrase";
+            btnAbrirFrase.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnAbrirFrase.Size = new Size(144, 45);
+            btnAbrirFrase.TabIndex = 14;
+            btnAbrirFrase.Text = "Abrir txt";
+            btnAbrirFrase.Click += btnAbrirFrase_Click;
             // 
-            // btn_abrirCifrado
+            // btnAbrirCifrado
             // 
-            btn_abrirCifrado.BackColor = Color.Transparent;
-            btn_abrirCifrado.BorderColor = Color.MediumAquamarine;
-            btn_abrirCifrado.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            btn_abrirCifrado.BorderThickness = 1;
-            btn_abrirCifrado.CustomizableEdges = customizableEdges35;
-            btn_abrirCifrado.DisabledState.BorderColor = Color.DarkGray;
-            btn_abrirCifrado.DisabledState.CustomBorderColor = Color.DarkGray;
-            btn_abrirCifrado.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btn_abrirCifrado.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btn_abrirCifrado.FillColor = Color.Transparent;
-            btn_abrirCifrado.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_abrirCifrado.ForeColor = Color.White;
-            btn_abrirCifrado.Location = new Point(491, 328);
-            btn_abrirCifrado.Name = "btn_abrirCifrado";
-            btn_abrirCifrado.ShadowDecoration.CustomizableEdges = customizableEdges36;
-            btn_abrirCifrado.Size = new Size(144, 45);
-            btn_abrirCifrado.TabIndex = 17;
-            btn_abrirCifrado.Text = "Abrir txt";
-            btn_abrirCifrado.Tile = true;
-            btn_abrirCifrado.Click += guna2Button6_Click;
+            btnAbrirCifrado.BackColor = Color.Transparent;
+            btnAbrirCifrado.BorderColor = Color.MediumAquamarine;
+            btnAbrirCifrado.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnAbrirCifrado.BorderThickness = 1;
+            btnAbrirCifrado.CustomizableEdges = customizableEdges9;
+            btnAbrirCifrado.DisabledState.BorderColor = Color.DarkGray;
+            btnAbrirCifrado.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnAbrirCifrado.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnAbrirCifrado.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnAbrirCifrado.FillColor = Color.Transparent;
+            btnAbrirCifrado.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAbrirCifrado.ForeColor = Color.White;
+            btnAbrirCifrado.Location = new Point(491, 328);
+            btnAbrirCifrado.Name = "btnAbrirCifrado";
+            btnAbrirCifrado.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnAbrirCifrado.Size = new Size(144, 45);
+            btnAbrirCifrado.TabIndex = 17;
+            btnAbrirCifrado.Text = "Abrir txt";
+            btnAbrirCifrado.Tile = true;
+            btnAbrirCifrado.Click += btnAbrirCifrado_Click;
             // 
-            // btn_cifrar
+            // btnCifrar
             // 
-            btn_cifrar.BackColor = Color.Transparent;
-            btn_cifrar.BorderColor = Color.MediumAquamarine;
-            btn_cifrar.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            btn_cifrar.BorderThickness = 1;
-            btn_cifrar.CustomizableEdges = customizableEdges37;
-            btn_cifrar.DisabledState.BorderColor = Color.DarkGray;
-            btn_cifrar.DisabledState.CustomBorderColor = Color.DarkGray;
-            btn_cifrar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btn_cifrar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btn_cifrar.FillColor = Color.Transparent;
-            btn_cifrar.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_cifrar.ForeColor = Color.White;
-            btn_cifrar.Location = new Point(491, 187);
-            btn_cifrar.Name = "btn_cifrar";
-            btn_cifrar.ShadowDecoration.CustomizableEdges = customizableEdges38;
-            btn_cifrar.Size = new Size(144, 45);
-            btn_cifrar.TabIndex = 18;
-            btn_cifrar.Text = "Cifrar";
-            btn_cifrar.Click += btn_cifrar_Click;
+            btnCifrar.BackColor = Color.Transparent;
+            btnCifrar.BorderColor = Color.MediumAquamarine;
+            btnCifrar.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnCifrar.BorderThickness = 1;
+            btnCifrar.CustomizableEdges = customizableEdges11;
+            btnCifrar.DisabledState.BorderColor = Color.DarkGray;
+            btnCifrar.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnCifrar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnCifrar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnCifrar.FillColor = Color.Transparent;
+            btnCifrar.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCifrar.ForeColor = Color.White;
+            btnCifrar.Location = new Point(491, 187);
+            btnCifrar.Name = "btnCifrar";
+            btnCifrar.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btnCifrar.Size = new Size(144, 45);
+            btnCifrar.TabIndex = 18;
+            btnCifrar.Text = "Cifrar";
+            btnCifrar.Click += btn_cifrar_Click;
             // 
-            // btn_descifrar
+            // btnDescifrar
             // 
-            btn_descifrar.BackColor = Color.Transparent;
-            btn_descifrar.BorderColor = Color.MediumAquamarine;
-            btn_descifrar.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            btn_descifrar.BorderThickness = 1;
-            btn_descifrar.CustomizableEdges = customizableEdges39;
-            btn_descifrar.DisabledState.BorderColor = Color.DarkGray;
-            btn_descifrar.DisabledState.CustomBorderColor = Color.DarkGray;
-            btn_descifrar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btn_descifrar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btn_descifrar.FillColor = Color.Transparent;
-            btn_descifrar.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_descifrar.ForeColor = Color.White;
-            btn_descifrar.Location = new Point(491, 405);
-            btn_descifrar.Name = "btn_descifrar";
-            btn_descifrar.ShadowDecoration.CustomizableEdges = customizableEdges40;
-            btn_descifrar.Size = new Size(144, 45);
-            btn_descifrar.TabIndex = 19;
-            btn_descifrar.Text = "Descifrar";
-            btn_descifrar.Click += btn_descifrar_Click;
+            btnDescifrar.BackColor = Color.Transparent;
+            btnDescifrar.BorderColor = Color.MediumAquamarine;
+            btnDescifrar.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnDescifrar.BorderThickness = 1;
+            btnDescifrar.CustomizableEdges = customizableEdges13;
+            btnDescifrar.DisabledState.BorderColor = Color.DarkGray;
+            btnDescifrar.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnDescifrar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnDescifrar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnDescifrar.FillColor = Color.Transparent;
+            btnDescifrar.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDescifrar.ForeColor = Color.White;
+            btnDescifrar.Location = new Point(491, 405);
+            btnDescifrar.Name = "btnDescifrar";
+            btnDescifrar.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnDescifrar.Size = new Size(144, 45);
+            btnDescifrar.TabIndex = 19;
+            btnDescifrar.Text = "Descifrar";
+            btnDescifrar.Click += btn_descifrar_Click;
             // 
             // label1
             // 
@@ -313,131 +311,129 @@
             label1.TabIndex = 20;
             label1.Text = "VIGENERE";
             // 
-            // txt_FraseCriptoC
+            // txtFraseCriptoC
             // 
-            txt_FraseCriptoC.BackColor = Color.MediumAquamarine;
-            txt_FraseCriptoC.BorderColor = Color.MediumAquamarine;
-            txt_FraseCriptoC.BorderThickness = 0;
-            txt_FraseCriptoC.CustomizableEdges = customizableEdges41;
-            txt_FraseCriptoC.DefaultText = "";
-            txt_FraseCriptoC.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txt_FraseCriptoC.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txt_FraseCriptoC.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txt_FraseCriptoC.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txt_FraseCriptoC.FillColor = Color.Black;
-            txt_FraseCriptoC.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_FraseCriptoC.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_FraseCriptoC.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_FraseCriptoC.Location = new Point(660, 149);
-            txt_FraseCriptoC.Multiline = true;
-            txt_FraseCriptoC.Name = "txt_FraseCriptoC";
-            txt_FraseCriptoC.PasswordChar = '\0';
-            txt_FraseCriptoC.PlaceholderText = "";
-            txt_FraseCriptoC.SelectedText = "";
-            txt_FraseCriptoC.ShadowDecoration.CustomizableEdges = customizableEdges42;
-            txt_FraseCriptoC.Size = new Size(200, 149);
-            txt_FraseCriptoC.TabIndex = 21;
+            txtFraseCriptoC.BackColor = Color.MediumAquamarine;
+            txtFraseCriptoC.BorderColor = Color.MediumAquamarine;
+            txtFraseCriptoC.BorderThickness = 0;
+            txtFraseCriptoC.CustomizableEdges = customizableEdges15;
+            txtFraseCriptoC.DefaultText = "";
+            txtFraseCriptoC.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtFraseCriptoC.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtFraseCriptoC.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtFraseCriptoC.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtFraseCriptoC.FillColor = Color.Black;
+            txtFraseCriptoC.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtFraseCriptoC.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtFraseCriptoC.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtFraseCriptoC.Location = new Point(660, 149);
+            txtFraseCriptoC.Multiline = true;
+            txtFraseCriptoC.Name = "txtFraseCriptoC";
+            txtFraseCriptoC.PasswordChar = '\0';
+            txtFraseCriptoC.PlaceholderText = "";
+            txtFraseCriptoC.SelectedText = "";
+            txtFraseCriptoC.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            txtFraseCriptoC.Size = new Size(200, 149);
+            txtFraseCriptoC.TabIndex = 21;
             // 
-            // txt_fraseDesifrada
+            // txtFraseDesifrada
             // 
-            txt_fraseDesifrada.BorderColor = Color.MediumAquamarine;
-            txt_fraseDesifrada.BorderThickness = 0;
-            txt_fraseDesifrada.CustomizableEdges = customizableEdges43;
-            txt_fraseDesifrada.DefaultText = "";
-            txt_fraseDesifrada.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txt_fraseDesifrada.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txt_fraseDesifrada.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txt_fraseDesifrada.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txt_fraseDesifrada.FillColor = Color.Transparent;
-            txt_fraseDesifrada.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_fraseDesifrada.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_fraseDesifrada.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_fraseDesifrada.Location = new Point(660, 356);
-            txt_fraseDesifrada.Multiline = true;
-            txt_fraseDesifrada.Name = "txt_fraseDesifrada";
-            txt_fraseDesifrada.PasswordChar = '\0';
-            txt_fraseDesifrada.PlaceholderText = "";
-            txt_fraseDesifrada.SelectedText = "";
-            txt_fraseDesifrada.ShadowDecoration.CustomizableEdges = customizableEdges44;
-            txt_fraseDesifrada.Size = new Size(200, 174);
-            txt_fraseDesifrada.TabIndex = 22;
+            txtFraseDesifrada.BorderColor = Color.MediumAquamarine;
+            txtFraseDesifrada.BorderThickness = 0;
+            txtFraseDesifrada.CustomizableEdges = customizableEdges17;
+            txtFraseDesifrada.DefaultText = "";
+            txtFraseDesifrada.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtFraseDesifrada.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtFraseDesifrada.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtFraseDesifrada.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtFraseDesifrada.FillColor = Color.Transparent;
+            txtFraseDesifrada.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtFraseDesifrada.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtFraseDesifrada.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtFraseDesifrada.Location = new Point(660, 356);
+            txtFraseDesifrada.Multiline = true;
+            txtFraseDesifrada.Name = "txtFraseDesifrada";
+            txtFraseDesifrada.PasswordChar = '\0';
+            txtFraseDesifrada.PlaceholderText = "";
+            txtFraseDesifrada.SelectedText = "";
+            txtFraseDesifrada.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            txtFraseDesifrada.Size = new Size(200, 174);
+            txtFraseDesifrada.TabIndex = 22;
             // 
             // abrirtxtocifrado
             // 
             abrirtxtocifrado.FileName = "openFileDialog1";
             // 
-            // btn_GuardarFrase
+            // btnGuardarFrase
             // 
-            btn_GuardarFrase.BackColor = Color.Transparent;
-            btn_GuardarFrase.BorderColor = Color.MediumAquamarine;
-            btn_GuardarFrase.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            btn_GuardarFrase.BorderThickness = 1;
-            btn_GuardarFrase.CustomizableEdges = customizableEdges45;
-            btn_GuardarFrase.DisabledState.BorderColor = Color.DarkGray;
-            btn_GuardarFrase.DisabledState.CustomBorderColor = Color.DarkGray;
-            btn_GuardarFrase.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btn_GuardarFrase.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btn_GuardarFrase.FillColor = Color.Transparent;
-            btn_GuardarFrase.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_GuardarFrase.ForeColor = Color.White;
-            btn_GuardarFrase.Location = new Point(491, 477);
-            btn_GuardarFrase.Name = "btn_GuardarFrase";
-            btn_GuardarFrase.ShadowDecoration.CustomizableEdges = customizableEdges46;
-            btn_GuardarFrase.Size = new Size(144, 45);
-            btn_GuardarFrase.TabIndex = 23;
-            btn_GuardarFrase.Text = "Guardar";
-            btn_GuardarFrase.Click += btn_GuardarFrase_Click;
+            btnGuardarFrase.BackColor = Color.Transparent;
+            btnGuardarFrase.BorderColor = Color.MediumAquamarine;
+            btnGuardarFrase.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnGuardarFrase.BorderThickness = 1;
+            btnGuardarFrase.CustomizableEdges = customizableEdges19;
+            btnGuardarFrase.DisabledState.BorderColor = Color.DarkGray;
+            btnGuardarFrase.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnGuardarFrase.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnGuardarFrase.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnGuardarFrase.FillColor = Color.Transparent;
+            btnGuardarFrase.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnGuardarFrase.ForeColor = Color.White;
+            btnGuardarFrase.Location = new Point(491, 477);
+            btnGuardarFrase.Name = "btnGuardarFrase";
+            btnGuardarFrase.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            btnGuardarFrase.Size = new Size(144, 45);
+            btnGuardarFrase.TabIndex = 23;
+            btnGuardarFrase.Text = "Guardar";
+            btnGuardarFrase.Click += btn_GuardarFrase_Click;
             // 
+            // txtCifradoD
             // 
-            // txt_CifradoD
+            txtCifradoD.BackColor = Color.Transparent;
+            txtCifradoD.BorderColor = Color.MediumAquamarine;
+            txtCifradoD.BorderThickness = 0;
+            txtCifradoD.CustomizableEdges = customizableEdges21;
+            txtCifradoD.DefaultText = "";
+            txtCifradoD.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtCifradoD.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtCifradoD.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtCifradoD.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtCifradoD.FillColor = Color.Transparent;
+            txtCifradoD.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtCifradoD.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCifradoD.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtCifradoD.Location = new Point(210, 328);
+            txtCifradoD.Multiline = true;
+            txtCifradoD.Name = "txtCifradoD";
+            txtCifradoD.PasswordChar = '\0';
+            txtCifradoD.PlaceholderText = "";
+            txtCifradoD.SelectedText = "";
+            txtCifradoD.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            txtCifradoD.Size = new Size(262, 152);
+            txtCifradoD.TabIndex = 2;
             // 
-            txt_CifradoD.BackColor = Color.Transparent;
-            txt_CifradoD.BorderColor = Color.MediumAquamarine;
-            txt_CifradoD.BorderThickness = 0;
-            txt_CifradoD.CustomizableEdges = customizableEdges47;
-            txt_CifradoD.DefaultText = "";
-            txt_CifradoD.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txt_CifradoD.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txt_CifradoD.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txt_CifradoD.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txt_CifradoD.FillColor = Color.Transparent;
-            txt_CifradoD.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_CifradoD.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_CifradoD.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_CifradoD.Location = new Point(210, 328);
-            txt_CifradoD.Multiline = true;
-            txt_CifradoD.Name = "txt_CifradoD";
-            txt_CifradoD.PasswordChar = '\0';
-            txt_CifradoD.PlaceholderText = "";
-            txt_CifradoD.SelectedText = "";
-            txt_CifradoD.ShadowDecoration.CustomizableEdges = customizableEdges48;
-            txt_CifradoD.Size = new Size(262, 152);
-            txt_CifradoD.TabIndex = 2;
-            txt_CifradoD.TextChanged += txt_CifradoD_TextChanged;
+            // txtClaveCifraD
             // 
-            // txt_claveCifraD
-            // 
-            txt_claveCifraD.BorderColor = Color.MediumAquamarine;
-            txt_claveCifraD.BorderThickness = 0;
-            txt_claveCifraD.CustomizableEdges = customizableEdges49;
-            txt_claveCifraD.DefaultText = "";
-            txt_claveCifraD.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txt_claveCifraD.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txt_claveCifraD.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txt_claveCifraD.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txt_claveCifraD.FillColor = Color.Transparent;
-            txt_claveCifraD.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_claveCifraD.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_claveCifraD.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_claveCifraD.Location = new Point(210, 494);
-            txt_claveCifraD.Multiline = true;
-            txt_claveCifraD.Name = "txt_claveCifraD";
-            txt_claveCifraD.PasswordChar = '\0';
-            txt_claveCifraD.PlaceholderText = "";
-            txt_claveCifraD.SelectedText = "";
-            txt_claveCifraD.ShadowDecoration.CustomizableEdges = customizableEdges50;
-            txt_claveCifraD.Size = new Size(229, 36);
-            txt_claveCifraD.TabIndex = 3;
+            txtClaveCifraD.BorderColor = Color.MediumAquamarine;
+            txtClaveCifraD.BorderThickness = 0;
+            txtClaveCifraD.CustomizableEdges = customizableEdges23;
+            txtClaveCifraD.DefaultText = "";
+            txtClaveCifraD.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtClaveCifraD.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtClaveCifraD.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtClaveCifraD.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtClaveCifraD.FillColor = Color.Transparent;
+            txtClaveCifraD.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtClaveCifraD.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtClaveCifraD.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtClaveCifraD.Location = new Point(210, 494);
+            txtClaveCifraD.Multiline = true;
+            txtClaveCifraD.Name = "txtClaveCifraD";
+            txtClaveCifraD.PasswordChar = '\0';
+            txtClaveCifraD.PlaceholderText = "";
+            txtClaveCifraD.SelectedText = "";
+            txtClaveCifraD.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            txtClaveCifraD.Size = new Size(229, 36);
+            txtClaveCifraD.TabIndex = 3;
             // 
             // guna2HtmlLabel3
             // 
@@ -467,7 +463,7 @@
             btnBack.BorderColor = Color.MediumAquamarine;
             btnBack.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             btnBack.BorderThickness = 1;
-            btnBack.CustomizableEdges = customizableEdges51;
+            btnBack.CustomizableEdges = customizableEdges25;
             btnBack.DisabledState.BorderColor = Color.DarkGray;
             btnBack.DisabledState.CustomBorderColor = Color.DarkGray;
             btnBack.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -477,7 +473,7 @@
             btnBack.ForeColor = Color.White;
             btnBack.Location = new Point(12, 12);
             btnBack.Name = "btnBack";
-            btnBack.ShadowDecoration.CustomizableEdges = customizableEdges52;
+            btnBack.ShadowDecoration.CustomizableEdges = customizableEdges26;
             btnBack.Size = new Size(144, 45);
             btnBack.TabIndex = 24;
             btnBack.Text = "Volver";
@@ -492,15 +488,15 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(999, 567);
             Controls.Add(btnBack);
-            Controls.Add(btn_GuardarFrase);
-            Controls.Add(txt_fraseDesifrada);
-            Controls.Add(txt_FraseCriptoC);
+            Controls.Add(btnGuardarFrase);
+            Controls.Add(txtFraseDesifrada);
+            Controls.Add(txtFraseCriptoC);
             Controls.Add(label1);
-            Controls.Add(btn_descifrar);
-            Controls.Add(btn_cifrar);
-            Controls.Add(btn_abrirCifrado);
-            Controls.Add(btn_abrirFrase);
-            Controls.Add(btn_guardarCifrado);
+            Controls.Add(btnDescifrar);
+            Controls.Add(btnCifrar);
+            Controls.Add(btnAbrirCifrado);
+            Controls.Add(btnAbrirFrase);
+            Controls.Add(btnGuardarCifrado);
             Controls.Add(lbl_desencriptacion);
             Controls.Add(guna2HtmlLabel7);
             Controls.Add(guna2HtmlLabel5);
@@ -508,42 +504,41 @@
             Controls.Add(guna2HtmlLabel3);
             Controls.Add(guna2HtmlLabel2);
             Controls.Add(guna2HtmlLabel1);
-            Controls.Add(txt_claveCifraD);
-            Controls.Add(txt_CifradoD);
-            Controls.Add(txt_claveFraC);
-            Controls.Add(txt_fraseC);
+            Controls.Add(txtClaveCifraD);
+            Controls.Add(txtCifradoD);
+            Controls.Add(txtClaveFraC);
+            Controls.Add(txtFraseC);
             FormBorderStyle = FormBorderStyle.None;
             Name = "VigenereForm";
             Text = "Vigenere";
-            Load += VigenereForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2TextBox txt_fraseC;
-        private Guna.UI2.WinForms.Guna2TextBox txt_claveFraC;
+        private Guna.UI2.WinForms.Guna2TextBox txtFraseC;
+        private Guna.UI2.WinForms.Guna2TextBox txtClaveFraC;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_desencriptacion;
-        private Guna.UI2.WinForms.Guna2Button btn_guardarCifrado;
-        private Guna.UI2.WinForms.Guna2Button btn_abrirFrase;
-        private Guna.UI2.WinForms.Guna2Button btn_abrirCifrado;
-        private Guna.UI2.WinForms.Guna2Button btn_cifrar;
-        private Guna.UI2.WinForms.Guna2Button btn_descifrar;
+        private Guna.UI2.WinForms.Guna2Button btnGuardarCifrado;
+        private Guna.UI2.WinForms.Guna2Button btnAbrirFrase;
+        private Guna.UI2.WinForms.Guna2Button btnAbrirCifrado;
+        private Guna.UI2.WinForms.Guna2Button btnCifrar;
+        private Guna.UI2.WinForms.Guna2Button btnDescifrar;
         private Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox txt_FraseCriptoC;
-        private Guna.UI2.WinForms.Guna2TextBox txt_fraseDesifrada;
+        private Guna.UI2.WinForms.Guna2TextBox txtFraseCriptoC;
+        private Guna.UI2.WinForms.Guna2TextBox txtFraseDesifrada;
         private OpenFileDialog abrirtxtFrase;
         private OpenFileDialog abrirtxtocifrado;
-        private Guna.UI2.WinForms.Guna2Button btn_GuardarFrase;
+        private Guna.UI2.WinForms.Guna2Button btnGuardarFrase;
         private SaveFileDialog guardarCifrado;
         private SaveFileDialog guardarFrase;
-        private Guna.UI2.WinForms.Guna2TextBox txt_CifradoD;
-        private Guna.UI2.WinForms.Guna2TextBox txt_claveCifraD;
+        private Guna.UI2.WinForms.Guna2TextBox txtCifradoD;
+        private Guna.UI2.WinForms.Guna2TextBox txtClaveCifraD;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2Button btnBack;
